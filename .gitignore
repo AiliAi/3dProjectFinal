@@ -1,0 +1,17 @@
+.DS_Store
+*.swp
+.project
+.idea/
+.vscode/
+npm-debug.log
+.jshintrc
+.vs/
+node_modules/
+dist/
+
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

@@ -1,0 +1,33 @@
+extends layout.pug
+block append head
+    title=  'Sketchfab model'
+block append content
+  .container 
+    .row 
+      .h1.mt-3.mb-0 Sketchfab model
+    .row 
+      .d-flex.flex-row-reverse
+        i(
+          class="bi bi-info-circle-fill" 
+          data-bs-toggle="tooltip" 
+          data-bs-placement="bottom" 
+          title="3d elephant figure made with Qlone mobile app and Android phone using photogrammetria, obj file converted to glb and uploaded to sketchfab")
+    .row 
+      iframe(
+        title='Q Elephant', 
+        frameborder='0', 
+        allowfullscreen='', 
+        mozallowfullscreen='true', 
+        webkitallowfullscreen='true', 
+        allow='autoplay; fullscreen; xr-spatial-tracking', 
+        xr-spatial-tracking='', 
+        execution-while-out-of-viewport='', 
+        execution-while-not-rendered='', 
+        web-share='', 
+        width='960', 
+        height='540', 
+        src='https://sketchfab.com/models/1988df4a9c9c4521b15a811ced91f451/embed'
+      )  
+    .row
+      a(href="https://sketchfab.com" class="link-primary mt-3 mb-5" alt="web link to sketchfab page") sketchfab.com
+  

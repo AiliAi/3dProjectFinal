@@ -1,0 +1,16 @@
+extends layout.pug
+block append head
+  title='Pannellum'
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css')
+  script(type='text/javascript' src='https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js')
+block append content
+  .container
+    .row
+      .h1.mt-3.mb-0 Pannellum panorama viewer
+    .row
+      .d-flex.flex-row-reverse
+        i.bi.bi-info-circle-fill(data-bs-toggle='tooltip', data-bs-placement='bottom', title='Virtual tour made with Pannellum panorama viewer and Garmin Virb 360 camera, in Metropolia Karamalmi campus')
+    .row
+      #panorama.p-0(style='height: 480px')
+    .row
+      a.link-primary.mt-3.mb-5(href='https://pannellum.org') pannellum.org

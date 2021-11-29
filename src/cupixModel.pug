@@ -1,0 +1,18 @@
+extends layout.pug
+block append head
+    title=  'Cupix model'
+block append content
+    .container
+        .row 
+            .h1.mt-3.mb-0 Cupix virtual model
+        .row 
+            .d-flex.flex-row-reverse
+                i(
+                    class="bi bi-info-circle-fill" 
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="bottom" 
+                    title="360 pictures made with Matterport camera in Metropolia Karamalmi campus and uploaded to Cupix")
+        .row
+            canvas(class="webgl")
+        .row
+            a(href="https://homes.cupix.com" class="link-primary mt-3 mb-5" alt="web link to cupix page") homes.cupix.com

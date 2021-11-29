@@ -1,0 +1,51 @@
+@import "~normalize.css/normalize.css";
+@import "~bootstrap/scss/bootstrap";
+@import "threeTest";
+
+.main {
+    margin-top: 3em;
+}
+
+#container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading-text {
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.list-heading {
+    font-size: 2em;
+}
+
+.text-pos {
+    font-size: 0.7em;
+    text-align: right;
+}
+
+.webgl {
+    display: flex;
+    height: 100vh;
+    flex: 1;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.bi {
+    font-size: 2em;
+}
+
+.demo2 {
+    font-size: 23px;
+}

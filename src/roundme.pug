@@ -1,0 +1,27 @@
+extends layout.pug
+block append head
+    title=  'Roundme virtual tour'
+block append content
+  .container
+    .row 
+      .h1.mt-3.mb-0 Roundme virtual tour
+    .row 
+      .d-flex.flex-row-reverse
+        i(
+          class="bi bi-info-circle-fill" 
+          data-bs-toggle="tooltip" 
+          data-bs-placement="bottom" 
+          title="Virtual tour made with Garmin Virb 360 camera in Kalasatama Skate park and uploaded to Roundme")
+    .row
+        iframe(
+            width='960' 
+            height='540' 
+            src='https://roundme.com/embed/781475/2464336' 
+            frameborder='0' 
+            webkitallowfullscreen 
+            mozallowfullscreen 
+            allowfullscreen
+        )
+    .row
+      a(href="https://roundme.com" class="link-primary mt-3 mb-5" alt="web link to roundme page") roundme.com
+    

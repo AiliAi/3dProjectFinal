@@ -1,0 +1,13 @@
+extends layout.pug
+block append head
+    title=  'three test'
+block append content
+    .container-three
+        .three-text-content
+            h1 Three JS Test
+            p
+                | Stydying ThreeJS &amp; testing photogrammetry. 3D model was created from 50 images (iPhone SE) using Meshroom 
+                a(href='https://alicevision.org/') https://alicevision.org/
+                |  and cleaned in Blender.
+        .canvas-container
+            canvas.webgl
