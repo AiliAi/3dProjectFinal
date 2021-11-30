@@ -3,89 +3,96 @@
 @import "threeTest";
 
 .main {
-    margin-top: 3em;
+  margin-top: 3em;
 }
 
 #container {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #heading-text {
-    position: absolute;
-    z-index: 99;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 0.5em;
-    border-radius: 10px;
+  position: absolute;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.5em;
+  border-radius: 10px;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .list-heading {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 .text-pos {
-    font-size: 0.7em;
-    text-align: right;
+  font-size: 0.7em;
+  text-align: right;
 }
 
 .webgl {
-    display: flex;
-    height: 100vh;
-    flex: 1;
-    align-items: center;
-    overflow: hidden; 
+  display: flex;
+  height: 100vh;
+  flex: 1;
+  align-items: center;
+  overflow: hidden;
 }
 
 .bi {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 .demo2 {
-    font-size: 23px;
+  font-size: 23px;
 }
-
 
 .main-heading {
   font-size: 3em;
+  
 }
 
-.card-image {
-  height: 300px;
-  width: 100%;
-  object-fit: cover center;
-  background-repeat: no-repeat;
-  background-position: center;
- 
-}
+/*CARDS*/
 
 .card {
-  transition: all .5s ease; 
-  -webkit-transition:all .5s ease; 
-  -moz-transition:all .5s ease; 
-  -o-transition:all .5s ease;
-  -ms-transition:all .5s ease; 
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+
+  .card-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover center;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include media-breakpoint-up(sm) {
+      height: 250px;
+    }
+
+    @include media-breakpoint-up(md) {
+      height: 300px;
+    }
+  }
+  h5 {
+    font-size: 1.75em;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
 }
 
 .card-zoom {
-  -webkit-transform:scale(1.01);
-  -moz-transform:scale(1.01);
-  -ms-transform:scale(1.01);
-  -o-transform:scale(1.01);
-  transform:scale(1.01);
-  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50) !important;
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  transform: scale(1.01);
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5) !important;
 }
-
-.card h5 {
-  font-size: 1.75em;
-}
-
-.card p {
-  font-size: 1.5em;
-}
-
