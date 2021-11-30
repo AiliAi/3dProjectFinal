@@ -1,0 +1,60 @@
+{
+  "projects": [
+    {
+      "title": "Cupix 3D Model",
+      "type": "model",
+      "image": "thumbnails/cupixModel.PNG",
+      "description": "3D Model of a classroom made from 360 images in Cupix.",
+      "link": "cupixModel.html"
+    },
+    {
+      "title": "Cupix Virtual Tour",
+      "type": "tour",
+      "image": "thumbnails/cupixVirtualTour.PNG",
+      "description": "Virtual tour of a classroom created from 360 images in Cupix.",
+      "link": "cupixVirtualTour.html"
+    },
+    {
+      "title": "Matterport",
+      "type": "tour",
+      "image": "thumbnails/matterport.PNG",
+      "description": "Virtual tour of Karamalmi campus made with Matterport.",
+      "link": "matterport.html"
+    },
+    {
+      "title": "qlone Model",
+      "type": "model",
+      "image": "thumbnails/qloneModel.PNG",
+      "description": "3D model of an object created with Qlone mobile app.",
+      "link": "qloneModel.html"
+    },
+    {
+      "title": "3D model in Sketchfab",
+      "type": "model",
+      "image": "thumbnails/qloneModel.PNG",
+      "description": "3D model uploaded to Sketchfab.",
+      "link": "sketchfab.html"
+    },
+    {
+      "title": "Pannellum",
+      "type": "tour",
+      "image": "thumbnails/pannellum.PNG",
+      "description": "A lightweight free panorama viewer for the web.",
+      "link": "pannellum.html"
+    },
+    {
+      "title": "Roundme",
+      "type": "tour",
+      "image": "thumbnails/roundme.PNG",
+      "description": "Virtual tour created with Roundme.",
+      "link": "roundme.html"
+    },
+    {
+      "title": "Photogrammetry",
+      "type": "model",
+      "image": "thumbnails/photogrammetry.PNG",
+      "description": "Photogrammetry test.",
+      "link": "threeTest.html"
+    }
+  ]
+}

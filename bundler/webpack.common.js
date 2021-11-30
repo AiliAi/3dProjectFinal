@@ -16,6 +16,9 @@ module.exports = {
         qloneModel: path.resolve(__dirname, '../src/js/qloneModel.js'),
         threeTest: path.resolve(__dirname, '../src/js/threeTest.js'),
         pannellum: path.resolve(__dirname, '../src/js/pannellum.js'),
+        models: path.resolve(__dirname, '../src/js/models.js'),
+        vTours: path.resolve(__dirname, '../src/js/vTours.js'),
+        
 
     },
     output:
@@ -132,6 +135,27 @@ module.exports = {
                     collapseWhitespace: true
                 }
             }),
+
+            new HtmlWebpackPlugin({
+              template: path.resolve(__dirname, '../src/models.pug'),
+              chunks: ['models'],
+              inject: true,
+              filename: 'models.html',
+              minify: {
+                  removeComments: true,
+                  collapseWhitespace: true
+              }
+          }),
+          new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, '../src/vTours.pug'),
+            chunks: ['vTours'],
+            inject: true,
+            filename: 'vTours.html',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
             new webpack.ProvidePlugin({
                 '$': 'jquery',
                 'jQuery': 'jquery',
