@@ -61,7 +61,7 @@ ul {
   object-fit: cover center;
   background-repeat: no-repeat;
   background-position: center;
-  
+ 
 }
 
 .card {
@@ -70,7 +70,6 @@ ul {
   -moz-transition:all .5s ease; 
   -o-transition:all .5s ease;
   -ms-transition:all .5s ease; 
-
 }
 
 .card-zoom {
@@ -80,7 +79,6 @@ ul {
   -o-transform:scale(1.01);
   transform:scale(1.01);
   box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50) !important;
- 
 }
 
 .card h5 {
@@ -90,3 +88,4 @@ ul {
 .card p {
   font-size: 1.5em;
 }
+
