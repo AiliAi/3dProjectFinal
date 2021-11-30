@@ -1,0 +1,34 @@
+extends layout.pug
+block append head
+    title=  'Qlone model'
+block append content
+    .container
+        .row 
+            .h1.mt-3.mb-0 Qlone model and Model-viewer library
+        .row 
+            .d-flex.flex-row-reverse
+                i(
+                    class="bi bi-info-circle-fill" 
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="bottom" 
+                    title="3d elephant figure made with Qlone mobile app and Android phone using photogrammetria, obj file converted to glb and used google model-viewer library to get the figure on the web-page")
+        .row
+            .cont-body
+                model-viewer(
+                    bounds="tight" 
+                    src="models/Q_Elephant.glb" 
+                    ar ar-modes="webxr scene-viewer quick-look" 
+                    camera-controls environment-image="neutral" 
+                    poster="pictures/poster.webp" shadow-intensity="1"
+                )
+                    div(class="progress-bar hide" slot="progress-bar")
+                        div(class="update-bar")
+                    button(slot="ar-button" id="ar-button") View in your space
+                    div(id="ar-prompt")
+                        img(require=("pictures/ar_hand_prompt.png"))
+                    button(id="ar-failure") AR is not tracking!
+        .row
+            a(href="https://modelviewer.dev/" class="link-primary mt-3 mb-5" alt="web link to modelviewer page") modelviewer.dev
+            
+
+

@@ -16,6 +16,7 @@ module.exports = {
         qloneModel: path.resolve(__dirname, '../src/js/qloneModel.js'),
         threeTest: path.resolve(__dirname, '../src/js/threeTest.js'),
         pannellum: path.resolve(__dirname, '../src/js/pannellum.js'),
+        modelViewer: path.resolve(__dirname, '../src/js/modelViewer.js'),
 
     },
     output:
@@ -132,6 +133,16 @@ module.exports = {
                     collapseWhitespace: true
                 }
             }),
+            new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, '../src/modelViewer.pug'),
+                chunks: ['modelViewer'],
+                inject: true,
+                filename: 'modelViewer.html',
+                minify: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                }
+            }),
             new webpack.ProvidePlugin({
                 '$': 'jquery',
                 'jQuery': 'jquery',
@@ -198,11 +209,11 @@ module.exports = {
 
                 // Images
                 {
-                    test: /\.(jpg|png|gif|svg)$/,
+                    test: /\.(jpg|png|gif|svg|webp|tiff)$/,
                     use:
                         [
                             {
-                                loader: 'file-loader',
+                                loader: 'html-srcsets-loader',
                                 options:
                                 {
                                     outputPath: 'assets/images/'
