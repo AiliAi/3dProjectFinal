@@ -55,6 +55,13 @@
       "image": "thumbnails/photogrammetry.PNG",
       "description": "Photogrammetry test.",
       "link": "threeTest.html"
+    },
+    {
+      "title": "Model with model-viewer",
+      "type": "model",
+      "image": "thumbnails/poster_Elephant.webp",
+      "description": "Model with model-viewer",
+      "link": "modelViewer.html"
     }
   ]
 }

@@ -16,14 +16,9 @@ module.exports = {
         qloneModel: path.resolve(__dirname, '../src/js/qloneModel.js'),
         threeTest: path.resolve(__dirname, '../src/js/threeTest.js'),
         pannellum: path.resolve(__dirname, '../src/js/pannellum.js'),
-<<<<<<< HEAD
         models: path.resolve(__dirname, '../src/js/models.js'),
         vTours: path.resolve(__dirname, '../src/js/vTours.js'),
-        
-=======
-        modelViewer: path.resolve(__dirname, '../src/js/modelViewer.js'),
->>>>>>> Aili
-
+        modelViewer: path.resolve(__dirname, '../src/js/modelViewer.js')
     },
     output:
     {
@@ -139,7 +134,6 @@ module.exports = {
                     collapseWhitespace: true
                 }
             }),
-<<<<<<< HEAD
 
             new HtmlWebpackPlugin({
               template: path.resolve(__dirname, '../src/models.pug'),
@@ -161,7 +155,6 @@ module.exports = {
                 collapseWhitespace: true
             }
         }),
-=======
             new HtmlWebpackPlugin({
                 template: path.resolve(__dirname, '../src/modelViewer.pug'),
                 chunks: ['modelViewer'],
@@ -172,7 +165,6 @@ module.exports = {
                     collapseWhitespace: true
                 }
             }),
->>>>>>> Aili
             new webpack.ProvidePlugin({
                 '$': 'jquery',
                 'jQuery': 'jquery',
