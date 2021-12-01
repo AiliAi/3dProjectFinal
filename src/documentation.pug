@@ -1,0 +1,95 @@
+extends layout.pug
+block append head
+    title=  'Home'
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+block append content
+    div(class="loading-bar")
+    div(id="container")  
+        h1#heading-text 
+            p VIRTUAL TOURS AND 3D MODELS ON WEB-PAGE
+            p.text-pos demo v1
+    .container.mb-5
+        .row.mt-4
+            p
+                h2#tourApps Virtual tour apps we tested
+            p All of these web aplications need 360 photos to make virtual tour.
+            ul 
+                li
+                    a(href="https://krpano.com/home/" class="link-primary mt-3 mb-5" alt="web link to Krpano page") Krpano
+                    ol + Makes virtual tour from depthmaps, use 
+                        a(href="https://everpano.com/documentation" class="link-primary mt-3 mb-5" alt="web link to Everpano page") Everpano
+                        |  to make dephtmaps first.
+                    ol + Use 
+                        a(href="https://der-mische.de/panocamadder/" class="link-primary mt-3 mb-5" alt="web link to Everpano page") PanocamAdder
+                        |  plugin with blender to create 3D models from equirectangular panoramas (makes Obj file).
+                    ol - Hard to use
+                li
+                    a(href="https://homes.cupix.com/" class="link-primary mt-3 mb-5" alt="web link to Cupix page") Cupix
+                    ol + Can generate 3D models, alternative to matterport
+                li
+                    a(href="https://roundme.com" class="link-primary mt-3 mb-5" alt="web link to RoundMe page") RoundMe
+                    ol + Simple and easy to use
+                li
+                    a(href="https://pannellum.org" class="link-primary mt-3 mb-5" alt="web link to Krpano page") Pannellum
+                    ol + Open source panorama viewer for the web
+                    ol + Easy to use
+                li
+                   a(href="https://pchen66.github.io/panolens.js/#Home" class="link-primary mt-3 mb-5" alt="web link to Panolens page") Panolens.js
+
+                li
+                    a(href="https://www.momento360.com" class="link-primary mt-3 mb-5" alt="web link to Momento360 page") Momento360
+                li
+                    a(href="https://www.marzipano.net/" class="link-primary mt-3 mb-5" alt="web link to Marzipano page") Marzipano
+                li
+                    a(href="https://threejs.org" class="link-primary mt-3 mb-5" alt="web link to Threejs page") Three.js
+                    ol + Advanced level 
+                    ol + Used as a base for other panorama viewer libraries
+                    ol - hard to learn
+                li
+                    a(href="https://matterport.com" class="link-primary mt-3 mb-5" alt="web link to Matterport page") Matterport
+                    ol + Superiour compaired to others
+                    ol + Easy to use 
+                    ol - Expencive
+        .row
+            p
+                h2#sphereToCube Sphere to cube converters
+            ul 
+                li
+                    a(href="https://nadirpatch.com/sphere2cube/" class="link-primary mt-3 mb-5" alt="web link to Nadirpatch page") Nadirpatch
+                li
+                    a(href="https://jaxry.github.io/panorama-to-cubemap/" class="link-primary mt-3 mb-5" alt="web link to jaxry.github.io page") jaxry.github.io
+                li
+                    a(href="https://github.com/matheowis/HDRI-to-CubeMap" class="link-primary mt-3 mb-5" alt="web link to Matheowis page") Matheowis
+                    ol + Open source
+                    ol + Can choose picture quality
+                    ol + Pictures won't be loaded on someone's other server
+        .row
+            p
+                h2#photoStiching Photo stitching software
+            ul 
+                li
+                    a(href="https://www.ptgui.com" class="link-primary mt-3 mb-5" alt="web link to PTGui page") PTGui
+                    ol + Easy to use, automatic
+                li
+                    a(href="https://alicevision.org" class="link-primary mt-3 mb-5" alt="web link to Meshroom page") Meshroom
+                    ol + Free 
+                    ol - Not for mac
+                li
+                    a(href="https://www.capturingreality.com/" class="link-primary mt-3 mb-5" alt="web link to Capturingreality page") Capturingreality
+                li
+                    a(href="https://www.easypano.com/" class="link-primary mt-3 mb-5" alt="web link to Easypano page") Easypano
+                li
+                    a(href="http://hugin.sourceforge.net/" class="link-primary mt-3 mb-5" alt="web link to Hugin page") Hugin
+                    ol + Free 
+                    ol + Hard to use
+        .row
+            p
+                h2#popularCameras Popular 3D auto stitching cameras
+            ul 
+                li Yi
+                li Insta360 One
+                li Mi Sphere
+                li Qoocam
+                li Fusion
+
+    
