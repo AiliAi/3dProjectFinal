@@ -112,7 +112,6 @@ module.exports = {
                     collapseWhitespace: true
                 }
             }),
-
             new HtmlWebpackPlugin({
                 template: path.resolve(__dirname, '../src/threeTest.pug'),
                 chunks: ['threeTest'],
@@ -123,7 +122,6 @@ module.exports = {
                     collapseWhitespace: true
                 }
             }),
-
             new HtmlWebpackPlugin({
                 template: path.resolve(__dirname, '../src/pannellum.pug'),
                 chunks: ['pannellum'],
@@ -134,7 +132,6 @@ module.exports = {
                     collapseWhitespace: true
                 }
             }),
-
             new HtmlWebpackPlugin({
               template: path.resolve(__dirname, '../src/models.pug'),
               chunks: ['models'],
@@ -186,7 +183,7 @@ module.exports = {
                 //PUG
                 {
                     test: /\.pug$/,
-                    use: ['html-loader', 'pug-html-loader']
+                    use: ['html-srcsets-loader', 'pug-html-loader']
                 },
 
                 // JS
@@ -235,7 +232,7 @@ module.exports = {
                     use:
                         [
                             {
-                                loader: 'html-srcsets-loader',
+                                loader: 'url-loader?name=documents/[name].[ext]',
                                 options:
                                 {
                                     outputPath: 'assets/images/'
