@@ -26,9 +26,10 @@ gltfLoader.setDRACOLoader(dracoLoader);
 let mixer = null;
 
 gltfLoader.load(
-    'models/Q_Elephant.glb',
+    'models/Q_Unicorn.glb',
     (glb) => {
         glb.scene.scale.set(3, 3, 3);
+        glb.scene.rotation.y = Math.PI * 0.25;
         scene.add(glb.scene);
     }
 )
@@ -65,7 +66,7 @@ scene.add(camera);
 
 // Controls
 const controls = new OrbitControls(camera, canvas);
-controls.target.set(0, 0.75, 0);
+controls.target.set(0, 0.60, 0);
 controls.enableDamping = true;
 
 /**

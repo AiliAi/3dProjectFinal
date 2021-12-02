@@ -18,7 +18,8 @@ module.exports = {
         pannellum: path.resolve(__dirname, '../src/js/pannellum.js'),
         models: path.resolve(__dirname, '../src/js/models.js'),
         vTours: path.resolve(__dirname, '../src/js/vTours.js'),
-        modelViewer: path.resolve(__dirname, '../src/js/modelViewer.js')
+        modelViewer: path.resolve(__dirname, '../src/js/modelViewer.js'),
+        myWebAr: path.resolve(__dirname, '../src/js/myWebAr.js')
     },
     output:
     {
@@ -157,6 +158,16 @@ module.exports = {
                 chunks: ['modelViewer'],
                 inject: true,
                 filename: 'modelViewer.html',
+                minify: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, '../src/myWebAr.pug'),
+                chunks: ['myWebAr'],
+                inject: true,
+                filename: 'myWebAr.html',
                 minify: {
                     removeComments: true,
                     collapseWhitespace: true

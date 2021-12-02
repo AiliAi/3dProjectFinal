@@ -1,0 +1,21 @@
+extends layout.pug
+block append head
+    title=  'MyWebAr'
+block append content
+  .container
+    .row 
+      .h1.mt-3.mb-0 MyWebAr
+    .row 
+      .d-flex.flex-row-reverse
+        i(
+          class="bi bi-info-circle-fill" 
+          data-bs-toggle="tooltip" 
+          data-bs-placement="bottom" 
+          title="A 3D elephant figure made using photogrammetry with the Qlone mobile app. A glb file uploaded from computer to MyWebAr web-app. QR code added to the webpage with the html image element.")
+    .row.my-ar.justify-content-center.align-items-center
+        .d-flex.justify-content-center.my-margin
+            i(
+                class="bi bi-badge-ar-fill"
+                data-bs-toggle="tooltip" 
+                data-bs-placement="bottom" 
+                title="Scan the QR code with a mobile phone to use an AR functionality")

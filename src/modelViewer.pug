@@ -1,17 +1,17 @@
 extends layout.pug
 block append head
-    title=  'Qlone model'
+    title=  '3D Elephant + AR'
 block append content
     .container
         .row 
-            .h1.mt-3.mb-0 Qlone model and Model-viewer library
+            .h1.mt-3.mb-0 3D Elephant + AR
         .row 
             .d-flex.flex-row-reverse
                 i(
                     class="bi bi-info-circle-fill" 
                     data-bs-toggle="tooltip" 
                     data-bs-placement="bottom" 
-                    title="3d elephant figure made with Qlone mobile app and Android phone using photogrammetria, obj file converted to glb and used google model-viewer library to get the figure on the web-page")
+                    title="A 3D elephant figure made using photogrammetry with the Qlone mobile app and Android phone. An glb file sent to a computer that is used with a Google Model-viewer library and html model-viewer element to get the model on the webpage.")
         .d-flex.align-items-center.cont-down
             .flex-shrink-0.qr-code-container
                 .d-flex.ms-4
@@ -28,7 +28,7 @@ block append content
                     ar-modes="webxr scene-viewer quick-look" 
                     camera-controls 
                     environment-image="neutral" 
-                    poster="pictures/poster_Elephant.webp" 
+                    poster="thumbnails/poster_Elephant.jpg" 
                     shadow-intensity="1"
                 )
                     div(class="progress-bar hide" slot="progress-bar")
@@ -39,11 +39,11 @@ block append content
                     div(id="ar-prompt")
         .ar-test
         .row
-            a(
-                href="https://modelviewer.dev/" 
-                class="link-primary mt-3 mb-5" 
-                alt="web link to modelviewer page"
-            ) modelviewer.dev
+            ul 
+                li
+                    a(href="https://www.qlone.pro" class="link-primary mt-3 mb-5" alt="web link to qlone page") qlone.pro
+                li
+                    a(href="https://modelviewer.dev/" class="link-primary mt-3 mb-5" alt="web link to modelviewer page") modelviewer.dev
             
             
 

@@ -34,9 +34,11 @@ const createCard = async (type) => {
       cardTitle.className = "card-title";
       cardTitle.innerText = project.title;
 
+      let keyWords = project.description;
+      let word = keyWords.split(',');
       const cardText = document.createElement("p");
       cardText.className = "card-text";
-      cardText.innerText = project.description;
+      cardText.innerHTML = "&#8226 " + word.join(" &#8226; ") + "&nbsp;";
 
       cardBody.appendChild(cardTitle);
       cardBody.appendChild(cardText);

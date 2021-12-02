@@ -1,20 +1,20 @@
 extends layout.pug
 block append head
-    title=  'Sketchfab model'
+    title=  '3D Mussel'
 block append content
   .container 
     .row 
-      .h1.mt-3.mb-0 Sketchfab model
+      .h1.mt-3.mb-0 3D Mussel
     .row 
       .d-flex.flex-row-reverse
         i(
           class="bi bi-info-circle-fill" 
           data-bs-toggle="tooltip" 
           data-bs-placement="bottom" 
-          title="3d elephant figure made with Qlone mobile app and Android phone using photogrammetria, obj file converted to glb and uploaded to sketchfab")
+          title="A 3D mussel figure made using photogrammetry with the Qlone mobile app and Android phone. An glb file sent to a computer, uploaded to Sketchfab and iframe link added to the website.")
     .row 
       iframe(
-        title='Q Elephant', 
+        title='Mussel', 
         frameborder='0', 
         allowfullscreen='', 
         mozallowfullscreen='true', 
@@ -26,8 +26,12 @@ block append content
         web-share='', 
         width='960', 
         height='540', 
-        src='https://sketchfab.com/models/1988df4a9c9c4521b15a811ced91f451/embed'
+        src='https://sketchfab.com/models/e8aad827ecb244e28427864c57b18587/embed'
       )  
     .row
-      a(href="https://sketchfab.com" class="link-primary mt-3 mb-5" alt="web link to sketchfab page") sketchfab.com
+      ul 
+        li
+          a(href="https://www.qlone.pro" class="link-primary mt-3 mb-5" alt="web link to qlone page") qlone.pro
+        li
+          a(href="https://sketchfab.com" class="link-primary mt-3 mb-5" alt="web link to sketchfab page") sketchfab.com
   

@@ -1,67 +1,74 @@
 {
   "projects": [
     {
-      "title": "Cupix 3D Model",
+      "title": "Cupix model",
       "type": "model",
       "image": "thumbnails/cupixModel.PNG",
-      "description": "3D Model of a classroom made from 360 images in Cupix.",
+      "description": "Photogrammetry, 360-degree images taken with Matterport camera, Three.js library for free, Cupix web-app for free with limits, Model generation",
       "link": "cupixModel.html"
     },
     {
-      "title": "Cupix Virtual Tour",
+      "title": "Cupix tour",
       "type": "tour",
       "image": "thumbnails/cupixVirtualTour.PNG",
-      "description": "Virtual tour of a classroom created from 360 images in Cupix.",
+      "description": "Professional virtual tour experience, 360-degree images taken with Matterport camera, Cupix web-app for free with limits",
       "link": "cupixVirtualTour.html"
     },
     {
       "title": "Matterport",
       "type": "tour",
       "image": "thumbnails/matterport.PNG",
-      "description": "Virtual tour of Karamalmi campus made with Matterport.",
+      "description": "Professional virtual tour experience, Matterport camera and web-app, Monthly fee with in-app purchases",
       "link": "matterport.html"
     },
     {
-      "title": "qlone Model",
+      "title": "Three.js",
       "type": "model",
-      "image": "thumbnails/qloneModel.PNG",
-      "description": "3D model of an object created with Qlone mobile app.",
+      "image": "thumbnails/Q_Unicorn.jpg",
+      "description": "Photogrammetry, Qlone mobile app for Android/ios for free with limits, Three.js library for free",
       "link": "qloneModel.html"
     },
     {
-      "title": "3D model in Sketchfab",
+      "title": "Sketchfab",
       "type": "model",
-      "image": "thumbnails/qloneModel.PNG",
-      "description": "3D model uploaded to Sketchfab.",
+      "image": "thumbnails/poster_Mussel.jpg",
+      "description": "Photogrammetry, Qlone mobile app for Android/ios for free with limits, Sketchfab web-app for free with limits",
       "link": "sketchfab.html"
     },
     {
       "title": "Pannellum",
       "type": "tour",
       "image": "thumbnails/pannellum.PNG",
-      "description": "A lightweight free panorama viewer for the web.",
+      "description": "Lightweight tour, 360-degree images taken with Matterport and Carmin Virb camera, Pannellum panorama viewer library for free",
       "link": "pannellum.html"
     },
     {
       "title": "Roundme",
       "type": "tour",
       "image": "thumbnails/roundme.PNG",
-      "description": "Virtual tour created with Roundme.",
+      "description": "Lightweight tour, 360-degree images taken with Carmin Virb camera, Roundme web-app for free with limits",
       "link": "roundme.html"
     },
     {
-      "title": "Photogrammetry",
+      "title": "Model-viewer + AR",
       "type": "model",
-      "image": "thumbnails/photogrammetry.PNG",
-      "description": "Photogrammetry test.",
-      "link": "threeTest.html"
+      "image": "thumbnails/poster_Elephant.jpg",
+      "description": "Photogrammetry, Qlone mobile app for Android/ios for free with limits, Google Model-viewer library with AR for free",
+      "link": "modelViewer.html"
     },
     {
-      "title": "Model with model-viewer",
+      "title": "MyWebAr",
       "type": "model",
-      "image": "thumbnails/poster_Elephant.webp",
-      "description": "Model with model-viewer",
-      "link": "modelViewer.html"
+      "image": "thumbnails/myWebAr.png",
+      "description": "Photogrammetry, Qlone mobile app for Android/ios for free with limits, MyWebAr Augmented Reality web-app for free with limits",
+      "link": "myWebAr.html"
+    },
+    {
+      "title": "Photogrammetry test",
+      "type": "model",
+      "image": "thumbnails/photogrammetry.PNG",
+      "description": "Photogrammetry, pictures taken with iphone, Three.js library for free, Meshroom for free",
+      "link": "threeTest.html"
     }
   ]
 }
