@@ -12,23 +12,39 @@ block append content
                     data-bs-toggle="tooltip" 
                     data-bs-placement="bottom" 
                     title="3d elephant figure made with Qlone mobile app and Android phone using photogrammetria, obj file converted to glb and used google model-viewer library to get the figure on the web-page")
-        .row
-            .cont-body
+        .d-flex.align-items-center.cont-down
+            .flex-shrink-0.qr-code-container
+                .d-flex.ms-4
+                    i(
+                        class="bi bi-badge-ar-fill"
+                        data-bs-toggle="tooltip" 
+                        data-bs-placement="bottom" 
+                        title="Scan the QR code with a mobile phone to use an AR functionality")
+            .flex-grow-1.cont-body-side 
                 model-viewer(
                     bounds="tight" 
                     src="models/Q_Elephant.glb" 
-                    ar ar-modes="webxr scene-viewer quick-look" 
-                    camera-controls environment-image="neutral" 
-                    poster="pictures/poster.webp" shadow-intensity="1"
+                    ar 
+                    ar-modes="webxr scene-viewer quick-look" 
+                    camera-controls 
+                    environment-image="neutral" 
+                    poster="pictures/poster_Elephant.webp" 
+                    shadow-intensity="1"
                 )
                     div(class="progress-bar hide" slot="progress-bar")
                         div(class="update-bar")
-                    button(slot="ar-button" id="ar-button") View in your space
+                    button(slot="ar-button" id="ar-button") 
+                        .ar-image
+                        p View in your space
                     div(id="ar-prompt")
-                        img(require=("pictures/ar_hand_prompt.png"))
-                    button(id="ar-failure") AR is not tracking!
+        .ar-test
         .row
-            a(href="https://modelviewer.dev/" class="link-primary mt-3 mb-5" alt="web link to modelviewer page") modelviewer.dev
+            a(
+                href="https://modelviewer.dev/" 
+                class="link-primary mt-3 mb-5" 
+                alt="web link to modelviewer page"
+            ) modelviewer.dev
+            
             
 
 
