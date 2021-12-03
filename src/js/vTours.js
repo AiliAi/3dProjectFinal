@@ -5,3 +5,4 @@ import '../modules/tooltip.js';
 import {createCard} from '../modules/card';
 
 createCard('tour');
+$('.navbar').dynamicMenu();

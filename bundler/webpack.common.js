@@ -19,7 +19,8 @@ module.exports = {
         models: path.resolve(__dirname, '../src/js/models.js'),
         vTours: path.resolve(__dirname, '../src/js/vTours.js'),
         modelViewer: path.resolve(__dirname, '../src/js/modelViewer.js'),
-        myWebAr: path.resolve(__dirname, '../src/js/myWebAr.js')
+        myWebAr: path.resolve(__dirname, '../src/js/myWebAr.js'),
+        documentation: path.resolve(__dirname, '../src/js/documentation.js')
     },
     output:
     {
@@ -168,6 +169,16 @@ module.exports = {
                 chunks: ['myWebAr'],
                 inject: true,
                 filename: 'myWebAr.html',
+                minify: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, '../src/documentation.pug'),
+                chunks: ['documentation'],
+                inject: true,
+                filename: 'documentation.html',
                 minify: {
                     removeComments: true,
                     collapseWhitespace: true

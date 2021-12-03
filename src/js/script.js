@@ -37,6 +37,8 @@ homeText.addEventListener('mouseleave', e => {
   mainBtn.className = 'btn btn-outline-info'
 });
 
+$('.navbar').dynamicMenu();
+
 
 
 
