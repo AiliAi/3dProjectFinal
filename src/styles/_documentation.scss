@@ -1,0 +1,48 @@
+.heading-cont {
+    width: 50%;
+}
+
+.main-heading {
+    color: $purle;
+  }
+
+.h1-doc {
+    font-size: 2.6em;
+    line-height: 1;
+    margin-right: 2em;
+    color: $magenta;
+}
+
+/*a:link, a:visited, a:active {
+    color: $purle !important;
+}*/
+
+.card-title {
+    color: $magenta;
+}
+
+.h2-doc {
+    font-size: 2.2em;
+    line-height: 1;
+    margin-right: 2em;
+}
+
+.cont-up {
+    border-bottom: 1px solid black;
+    padding: 1.5em;
+}
+
+@include media-breakpoint-down(md) { 
+    .cont-up {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .heading-cont {
+        width: 100%;
+    }
+
+    .h2-doc {
+        margin: 0 0.8em;
+    }
+}
