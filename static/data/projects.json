@@ -64,6 +64,13 @@
       "link": "myWebAr.html"
     },
     {
+      "title": "Mixer quide",
+      "type": "model",
+      "image": "thumbnails/poster_mixer.png",
+      "description": "Photogrammetry, Polycam mobile app for ios for free with limits, Google Model-viewer library with AR for free",
+      "link": "mixerGuide.html"
+    },
+    {
       "title": "Photogrammetry test",
       "type": "model",
       "image": "thumbnails/photogrammetry.PNG",

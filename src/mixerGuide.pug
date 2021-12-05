@@ -1,0 +1,97 @@
+extends layout.pug
+block append head
+    title=  'Mixer guide'
+block append content
+    .container
+        .row 
+            .h1.mt-3.mb-0 Mixer guide
+        .row 
+            .d-flex.flex-row-reverse
+                i(
+                    class="bi bi-info-circle-fill" 
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="bottom" 
+                    title="A BirdDog NDI mixer made using photogrammetry with the Polycam mobile app for ios phone. An glb file sent to a computer that is used with the model-viewer library and html model-viewer element to get a drawing to a webpage.")
+        .row.cont-body
+            model-viewer(
+                bounds="tight" 
+                src="models/polycamMixer.glb" 
+                ar ar-modes="webxr scene-viewer quick-look" 
+                camera-controls 
+                poster="thumbnails/poster_mixer_small.jpg" 
+                shadow-intensity="1.7" 
+                camera-orbit="-82.85deg 67.58deg auto" 
+                environment-image="pictures/classRoom.JPG" 
+                skybox-image="pictures/classRoom.JPG" 
+                exposure="4"
+            )
+                button(class="Hotspot" slot="hotspot-1" data-position="-0.13648179703798724m 0.16610041234073525m 0.2931140622521156m" data-normal="-0.37736530592592893m 0.8588816318478955m -0.34629145002111494m" data-visibility-attribute="visible")
+                    label 1
+                    .HotspotAnnotation Enter Button for menu setting to Enter/Confirm data.
+                button(class="Hotspot" slot="hotspot-2" data-position="0.030772046313584545m 0.02314891391975238m 0.08963098009050652m" data-normal="-0.36543634903915956m 0.9290711256458103m -0.05729850165717109m" data-visibility-attribute="visible")
+                    label 2
+                    .HotspotAnnotation 
+                        p.point-heading Pan Tilt Speed knob:
+                        ul
+                            li
+                                | Rotate: Speed adjustment / Navigate (in menu)
+                            li
+                                | Press: Select (in menu)
+                            li
+                                | Long press: Invert L/R direction
+                button(class="Hotspot" slot="hotspot-5" data-position="0.055427479914151534m 0.02299580196611073m 0.17855350856044275m" data-normal="0.014995084085497826m 0.9762824434713249m -0.21598087420632472m" data-visibility-attribute="visible")
+                    label 3
+                    .HotspotAnnotation 
+                        p.point-heading Zoom Speed knob:
+                         ul
+                            li
+                                | Rotate: Zoom speed adjustment / adjust value (in menu)
+                            li
+                                | Press: Save (in menu)
+                            li
+                                | Long press: Invert U/D Direction
+                button(class="Hotspot" slot="hotspot-6" data-position="-0.03530742739809367m -0.02973833546456417m 0.07569271670181249m" data-normal="-0.3300915117374357m 0.9430220733472332m 0.04182060567208179m" data-visibility-attribute="visible")
+                    label 4
+                    .HotspotAnnotation 
+                        p.point-heading Creating presets:
+                        ol
+                            li
+                                | Move the camera to the desired position
+                            li
+                                | Enter the desired preset number on the alphanumeric keyboard, and then hold the Preset button for 3 seconds to save
+                button(class="Hotspot" slot="hotspot-8" data-position="-0.04087229455761676m -0.03437436725040377m 0.14210524673310732m" data-normal="-0.3589977987088367m 0.9193095650124217m 0.1612157070476756m" data-visibility-attribute="visible")
+                    label 5
+                    .HotspotAnnotation 
+                        p.point-heading Calling presets:
+                        ol
+                            li
+                                | Enter the desired preset number on the alphanumeric keypad
+                            li
+                                | Press the Call button
+
+                button(class="Hotspot" slot="hotspot-9" data-position="0.1010661609608352m -0.04712694932405707m -0.20934498304699456m" data-normal="0.9986694409590462m -0.002635266285897547m -0.0515014860576745m" data-visibility-attribute="visible")
+                    label 6
+                    .HotspotAnnotation 
+                        | The controller supports serial RS232/RS422 and IP Cross protocol mix-control. It allows you to use RS232/RS422/IP control on one controller to control cameras (Protocol support: VISCA, PELCO D/P, VISCA over IP, CGI*) in a single system.
+                button(class="Hotspot" slot="hotspot-10" data-position="0.03397018955050701m -0.022304100177826358m -0.1341092815165938m" data-normal="-0.13593567988063307m 0.9879116870657086m 0.07451167354432162m" data-visibility-attribute="visible")
+                    label 7
+                    .HotspotAnnotation LCD Screen &ndash; Display for navigating keyboard settings
+                button(class="Hotspot" slot="hotspot-11" data-position="-0.09430705249401405m -0.042504868349757974m -0.12083859548930867m" data-normal="-0.06459180976066603m 0.9512675157248544m -0.3015261375710341m" data-visibility-attribute="visible")
+                    label 8
+                    .HotspotAnnotation Assign Keys &ndash; used to assign quick access to commands
+                div(class="progress-bar hide" slot="progress-bar")
+                    div(class="update-bar")
+                button(slot="ar-button" id="ar-button") 
+                    .ar-image
+                    p View in your space
+                div(id="ar-prompt")
+        .row
+            ul 
+                li
+                    a(href="https://poly.cam" class="link-primary mt-3 mb-5" alt="web link to polycam page") poly.cam
+                li
+                    a(href="https://modelviewer.dev/" class="link-primary mt-3 mb-5" alt="web link to modelviewer page") modelviewer.dev
+                li
+                    a(href="https://modelviewer.dev/editor/" class="link-primary mt-3 mb-5" alt="web link to modelviewer editor page") modelviewer.dev/editor
+                li
+                    a(href="https://bird-dog.tv/UG/PTZ-Keyboard_user-guide_part-1.pdf" class="link-primary mt-3 mb-5" alt="web link to bird-dog page") bird-dog.tv

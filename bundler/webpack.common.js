@@ -20,7 +20,8 @@ module.exports = {
         vTours: path.resolve(__dirname, '../src/js/vTours.js'),
         modelViewer: path.resolve(__dirname, '../src/js/modelViewer.js'),
         myWebAr: path.resolve(__dirname, '../src/js/myWebAr.js'),
-        documentation: path.resolve(__dirname, '../src/js/documentation.js')
+        documentation: path.resolve(__dirname, '../src/js/documentation.js'),
+        mixerGuide: path.resolve(__dirname, '../src/js/mixerGuide.js')
     },
     output:
     {
@@ -184,6 +185,16 @@ module.exports = {
                     collapseWhitespace: true
                 }
             }),
+            new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, '../src/mixerGuide.pug'),
+                chunks: ['mixerGuide'],
+                inject: true,
+                filename: 'mixerGuide.html',
+                minify: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                }
+            }),
             new webpack.ProvidePlugin({
                 '$': 'jquery',
                 'jQuery': 'jquery',
@@ -279,7 +290,16 @@ module.exports = {
                                 }
                             }
                         ]
+                },
+                // Shaders
+            {
+                test: /\.(glsl|vs|fs|vert|frag)$/,
+                type: 'asset/source',
+                generator:
+                {
+                    filename: 'assets/images/[hash][ext]'
                 }
+            }
             ]
     }
 }

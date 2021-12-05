@@ -1,0 +1,81 @@
+label {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+  }
+  
+.Hotspot {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 32px;
+    border: 1px solid #ffffff77;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    cursor: help;
+    height: 24px;
+    position: relative;
+    transition: opacity 0.3s;
+    width: 24px;
+  }
+  
+.Hotspot:not([data-visible]) {
+    background: transparent;
+    border: 4px solid #fff;
+    box-shadow: none;
+    height: 32px;
+    pointer-events: none;
+    width: 32px;
+    cursor: help;
+  }
+  
+.Hotspot:focus {
+    border: 4px solid rgb(0, 128, 200);
+    height: 32px;
+    outline: none;
+    width: 32px;
+    cursor: help;
+  }
+  
+.Hotspot > * {
+    opacity: 1;
+    transform: translateY(-20%);
+    cursor: help;
+  }
+  
+.HotspotAnnotation{
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #ffffff77;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    display: block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.9em;
+    font-weight: 100;
+    left: calc(100% + 1em);
+    line-height: 1.3em;
+    max-width: 200px;
+    overflow-wrap: break-word;
+    padding: 0.5em 1em;
+    position: absolute;
+    top: 50%;
+    width: max-content;
+    text-align: left;
+    cursor: help;
+  }
+  
+.Hotspot:not([data-visible]) > * {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(calc(-20% + 4px));
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+.HotspotAnnotation > ol {
+    margin-left: -1em;
+}
+
+.HotspotAnnotation > ul {
+    margin-left: -1em;
+    list-style-type: circle;
+}
