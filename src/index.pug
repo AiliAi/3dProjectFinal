@@ -3,12 +3,12 @@ block append head
   title=  'Home'
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
 block append content
-  div(class="loading-bar")
-  div(id="container") 
-    div#heading-text.d-flex.flex-column.align-items-center.p-5.container
-      h1.px-3.text-center VIRTUAL TOURS AND 3D MODELS ON WEB-PAGE
-      p.px-3.text-pos.text-center The aims of this project were to explore 3D imaging technologies and to demonstrate how 3D content can be used on the web. 
-      a.btn.btn-outline-info.fw-normal#main-btn(href='#info-container', role='button') LEARN MORE
+  .container-fluid.m-0.p-0(class="loading-bar")
+    .row.m-0.p-0.g-0(id="container") 
+      .col-md-6#heading-text.d-flex.flex-column.align-items-center.p-5
+        h1.px-3.text-center VIRTUAL TOURS AND 3D MODELS ON WEB-PAGE
+        p.px-3.text-pos.text-center The aims of this project were to explore 3D imaging technologies and to demonstrate how 3D content can be used on the web. 
+        a.btn.blue-btn.fw-normal#main-btn(href='#info-container', role='button') LEARN MORE
   .container#info-container
     .row.my-4
       .col 
@@ -18,35 +18,47 @@ block append content
         p In this project, we:
         ul.m-0.p-0
           li.d-flex
-            .bi.bi-check2-circle.text-info.px-2
+            .bi.bi-check2-circle.px-2
             p.py-2 created 3D model of a space using LiDAR scanner and Matterport camera
           li.d-flex
-            .bi.bi-check2-circle.text-info.px-2
-            p.py-2 made a virtual tour of the Karamaplmi kampus (floors 5 and 6)
+            .bi.bi-check2-circle.px-2
+            p.py-2 made a virtual tour of the Karamalmi kampus (floors 5 and 6)
           li.d-flex
-            .bi.bi-check2-circle.text-info.px-2
+            .bi.bi-check2-circle.px-2
             p.py-2 tested virtual tour applications to create both simple 360 panorama viewers and more immersive 3D virtual tours
           li.d-flex
-            .bi.bi-check2-circle.text-info.px-2
+            .bi.bi-check2-circle.px-2
             p.py-2 tested photogrammetry of an object
           li.d-flex
-            .bi.bi-check2-circle.text-info.px-2
+            .bi.bi-check2-circle.px-2
             p.py-2 considered how 3D models and virtual tours could be used on the web in the context of technical guides (??)      
   .container#home-container
     .row.my-4
       .col 
-        h2.text-center 3D models 
+        h2.text-center 3D models: Media lab
     .row.row-cols-1.row-cols-md-2
       .col.bg-light.d-flex.flex-column.align-items-center.py-5#left
         i.bi.bi-tablet.pb-2
         h3 LiDAR  
         p.text-center A 3D model of the studio created with Canvas scanner app on iPad Pro 2020. 
-        a.btn.btn-outline-info.fw-normal#btn-left(href='studioLidar.html', role='button') VIEW 3D MODEL                        
+        a.btn.blue-outline.fw-normal#btn-left(href='studioLidar.html', role='button') VIEW 3D MODEL                        
       .col.d-flex.flex-column.align-items-center.py-5#right
         i.bi.bi-camera.pb-2
         h3 Matterport
         p.text-center A 3D model and a virtual tour of the studio created with Matterport Pro2 3D camera. 
         a.btn.btn-outline-light.fw-normal#btn-right(href='studioMP.html', role='button') VIEW 3D MODEL
     .row.mt-4
+  .container#tour-container.mb-5
+    .row.my-4
+      .col 
+        h2.text-center Virtual tour in Karamalmi campus
+    .row#tour-image-container
+      .col#tour-image.d-flex.justify-content-center.align-items-center
+        a.btn.blue-btn#tour-button(href='matterport.html', role='button') View virtual tour
+        
+        
+        
+      
+ 
   
         
