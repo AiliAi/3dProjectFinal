@@ -1,0 +1,18 @@
+@import "base";
+
+.navbar .navbar-nav li > a {
+    padding: 0.5em;
+	color: $bs-gray-dark !important;
+	transition: background-color .2s, color .2s;
+
+	&:hover,
+	&:focus {
+		background-color: $hover;
+		color: $blue;
+	}
+}
+
+.navbar .navbar-nav li.active > a {
+	background-color: $blue;
+	color: #fff !important;
+}
