@@ -1,0 +1,34 @@
+extends layout.pug
+block append head
+    title=  'Media lab Lidar'
+block append content
+  .container 
+    .row 
+      .h1.mt-3.mb-0 Sketchfab
+    .row 
+      .d-flex.flex-row-reverse
+        i(
+          class="bi bi-info-circle-fill" 
+          data-bs-toggle="tooltip" 
+          data-bs-placement="bottom" 
+          title="Media lab Lidar")
+    .row 
+      iframe(
+        title='Media lab Lidar', 
+        frameborder='0', 
+        allowfullscreen='', 
+        mozallowfullscreen='true', 
+        webkitallowfullscreen='true', 
+        allow='autoplay; fullscreen; xr-spatial-tracking', 
+        xr-spatial-tracking='', 
+        execution-while-out-of-viewport='', 
+        execution-while-not-rendered='', 
+        web-share='', 
+        width='960', 
+        height='540', 
+        src='https://sketchfab.com/3d-models/scaniverse-medialab-7dd270dd046c4f6799ac96126b6566fc/embed'
+      )  
+    .row
+      ul 
+        li
+          a(href="https://sketchfab.com" class="link-primary mt-3 mb-5" alt="web link to sketchfab page") sketchfab.com

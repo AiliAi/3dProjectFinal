@@ -1,0 +1,25 @@
+extends layout.pug
+block append head
+    title=  'Media lab Matterport model'
+block append content
+  .container
+    .row 
+      .h1.mt-3.mb-0 3D model of a studio created with Matterport
+    .row 
+      .d-flex.flex-row-reverse
+        i(
+          class="bi bi-info-circle-fill" 
+          data-bs-toggle="tooltip" 
+          data-bs-placement="bottom" 
+          title="Media lab")
+    .row
+      iframe(
+        id="mp-studio"
+        width="853"
+        height="480"
+        frameborder="0"
+        allowfullscreen
+        allow="xr-spatial-tracking")
+    .row
+      a(href="https://matterport.com" class="link-primary mt-3 mb-5" alt="web link to matterport page") matterport.com
+
