@@ -4,14 +4,11 @@ block append head
 block append content
     .container
         .row 
-            .h1.mt-3.mb-0 Mixer guide
+            .main-heading.mt-3.mb-0 Mixer guide
         .row 
             .d-flex.flex-row-reverse
-                i(
-                    class="bi bi-info-circle-fill" 
-                    data-bs-toggle="tooltip" 
-                    data-bs-placement="bottom" 
-                    title="A BirdDog NDI mixer made using photogrammetry with the Polycam mobile app for ios phone. An glb file sent to a computer that is used with the model-viewer library and html model-viewer element to get a drawing to a webpage.")
+                a(href="#info")
+                    i(class="bi bi-info-circle-fill")   
         .row.cont-body
             model-viewer(
                 bounds="tight" 
@@ -85,13 +82,69 @@ block append content
                     .ar-image
                     p View in your space
                 div(id="ar-prompt")
-        .row
-            ul 
-                li
-                    a(href="https://poly.cam" class="link-primary mt-3 mb-5" alt="web link to polycam page") poly.cam
-                li
-                    a(href="https://modelviewer.dev/" class="link-primary mt-3 mb-5" alt="web link to modelviewer page") modelviewer.dev
-                li
-                    a(href="https://modelviewer.dev/editor/" class="link-primary mt-3 mb-5" alt="web link to modelviewer editor page") modelviewer.dev/editor
-                li
-                    a(href="https://bird-dog.tv/UG/PTZ-Keyboard_user-guide_part-1.pdf" class="link-primary mt-3 mb-5" alt="web link to bird-dog page") bird-dog.tv
+        .d-flex.align-items-center.cont-up
+            .h1-doc#info Info
+        .d-flex.align-items-center.cont-up
+            .flex-shrink-0.heading-cont
+                .h2-doc Used
+            .flex-grow-1
+                ul 
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc Photogrammetry
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc Polycam mobile app for ios for free with limits
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc Google Model-viewer library with AR for free
+        .d-flex.align-items-center.cont-up
+            .flex-shrink-0.heading-cont
+                .h2-doc Working Process
+            .flex-grow-1
+                ul
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc A BirdDog NDI mixer made using photogrammetry with the Polycam mobile app for ios phone/tablet
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc An glb file sent to a computer
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc  Model uploaded to Model-viewer editor, hotspots added and the code with a poster image downloaded from there
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc Code intergrated it into our project
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc Extra html code written and jQuey code added to make hotspots clickable
+        .d-flex.align-items-center.cont-up
+            .flex-shrink-0.heading-cont
+                .h2-doc Where to use
+            .flex-grow-1
+                ul
+                    li.d-flex
+                        i(class="bi bi-lightbulb")
+                        .text-doc Online stores to present the product and give a better idea of the product.
+                    li.d-flex
+                        i(class="bi bi-lightbulb")
+                        .text-doc To make instructions about object
+                    li.d-flex
+                        i(class="bi bi-lightbulb")
+                        .text-doc To share extra info about object
+        .d-flex.align-items-center.cont-up.mb-5
+            .flex-shrink-0.heading-cont
+                .h2-doc Webpages
+            .flex-grow-1
+                ul 
+                    li
+                        a(href="https://poly.cam" class="link-primary mt-3 mb-5" alt="web link to polycam page") poly.cam
+                    li
+                        a(href="https://modelviewer.dev/" class="link-primary mt-3 mb-5" alt="web link to modelviewer page") modelviewer.dev
+                    li
+                        a(href="https://modelviewer.dev/editor/" class="link-primary mt-3 mb-5" alt="web link to modelviewer editor page") modelviewer.dev/editor
+                    li
+                        a(href="https://bird-dog.tv/UG/PTZ-Keyboard_user-guide_part-1.pdf" class="link-primary mt-3 mb-5" alt="web link to bird-dog page") bird-dog.tv
+            
+
+

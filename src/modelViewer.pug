@@ -4,14 +4,11 @@ block append head
 block append content
     .container
         .row 
-            .h1.mt-3.mb-0 Model-viewer + AR
+            .main-heading.mt-3.mb-0 Model-viewer + AR
         .row 
             .d-flex.flex-row-reverse
-                i(
-                    class="bi bi-info-circle-fill" 
-                    data-bs-toggle="tooltip" 
-                    data-bs-placement="bottom" 
-                    title="A 3D elephant figure made using photogrammetry with the Qlone mobile app and Android phone. An glb file sent to a computer that is used with a Google Model-viewer library and html model-viewer element to get the model on the webpage.")
+                a(href="#info")
+                    i(class="bi bi-info-circle-fill")    
         .d-flex.align-items-center.cont-down
             .flex-shrink-0.qr-code-container
                 .d-flex.ms-4
@@ -38,15 +35,64 @@ block append content
                         p View in your space
                     div(id="ar-prompt")
         .ar-test
-        .row
-            ul 
-                li
-                    a(href="https://www.qlone.pro" class="link-primary mt-3 mb-5" alt="web link to qlone page") qlone.pro
-                li
-                    a(href="https://modelviewer.dev/" class="link-primary mt-3 mb-5" alt="web link to modelviewer page") modelviewer.dev
-                li
-                    a(href="https://modelviewer.dev/editor/" class="link-primary mt-3 mb-5" alt="web link to modelviewer editor page") modelviewer.dev/editor
-            
+        .d-flex.align-items-center.cont-up
+            .h1-doc#info Info
+        .d-flex.align-items-center.cont-up
+            .flex-shrink-0.heading-cont
+                .h2-doc Used
+            .flex-grow-1
+                ul 
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc Photogrammetry
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc Qlone mobile app for Android/ios for free with limits
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc Printed out Qlone mat, size A4
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc Google Model-viewer library with AR for free
+        .d-flex.align-items-center.cont-up
+            .flex-shrink-0.heading-cont
+                .h2-doc Working Process
+            .flex-grow-1
+                ul
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc A 3D elephant figure made using photogrammetry with the Qlone mobile app and Android phone.
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc An glb file sent to a computer.
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc Model uploaded to Model-viewer editor and the code with a poster image downloaded from there.
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc Use the code as it comes or intergrate it into your project.
+        .d-flex.align-items-center.cont-up
+            .flex-shrink-0.heading-cont
+                .h2-doc Where to use
+            .flex-grow-1
+                ul
+                    li.d-flex
+                        i(class="bi bi-lightbulb")
+                        .text-doc Online stores to present the product and give a better idea of the product.
+                    li.d-flex
+                        i(class="bi bi-lightbulb")
+                        .text-doc Online gallery. For example to give people a chance to try out how a picture would fit on a wall at home with Augumented Reality functionality.
+        .d-flex.align-items-center.cont-up.mb-5
+            .flex-shrink-0.heading-cont
+                .h2-doc Webpages
+            .flex-grow-1
+                ul 
+                    li
+                        a(href="https://www.qlone.pro" class="link-primary mt-3 mb-5" alt="web link to qlone page") qlone.pro
+                    li
+                        a(href="https://modelviewer.dev/" class="link-primary mt-3 mb-5" alt="web link to modelviewer page") modelviewer.dev
+                    li
+                        a(href="https://modelviewer.dev/editor/" class="link-primary mt-3 mb-5" alt="web link to modelviewer editor page") modelviewer.dev/editor
             
 
 

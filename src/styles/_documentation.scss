@@ -13,6 +13,10 @@
     color: $magenta;
 }
 
+.bolder-text {
+    font-weight: 500;
+}
+
 /*a:link, a:visited, a:active {
     color: $purle !important;
 }*/
@@ -25,12 +29,35 @@
     font-size: 2.2em;
     line-height: 1;
     margin-right: 2em;
-    padding-bottom: 1em;
+    padding-bottom: 0.8em;
 }
 
 .cont-up {
     border-bottom: 1px solid black;
     padding: 1.5em;
+}
+
+.bi.bi-plus, .bi.bi-dash, .bi.bi-arrow-right, .bi.bi-lightbulb, .bi.bi-dot {
+ font-size: 1.2em;
+ padding-right: 0.5em;
+ margin-top: -0.1em;
+ color: $blue;
+ -webkit-text-stroke: 0.04em;
+}
+
+.bi.bi-info-circle-fill {
+    color: $blue;
+    cursor: help;
+}
+
+.bi.bi-info-circle-fill:hover{
+    color: $blueHover;
+}
+
+.text-doc {
+    display: inline-flex;
+    font-size: 1em;
+    font-style: normal;
 }
 
 @include media-breakpoint-down(md) { 
@@ -43,7 +70,7 @@
         width: 100%;
     }
 
-    .h2-doc {
-        margin: 0 0.8em;
+    .cont-up > .flex-grow-1 > ul {
+        margin: 0 -1em;
     }
 }
