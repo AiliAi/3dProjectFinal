@@ -1,0 +1,30 @@
+extends layout.pug
+block append head
+    title=  'Media lab Lidar'
+block append content
+  .container 
+    .row 
+      .h1.mt-3.mb-0 3D model of the media lab created with Lidar
+    .row 
+      .d-flex.flex-row-reverse
+        i(
+          class="bi bi-info-circle-fill" 
+          data-bs-toggle="tooltip" 
+          data-bs-placement="bottom" 
+          title="The model was created using Scaniverse Lidar scanner app on iPad Pro 2020")
+    .row 
+      iframe(
+        title='Media lab Lidar', 
+        frameborder='0', 
+        allowfullscreen='', 
+        mozallowfullscreen='true', 
+        webkitallowfullscreen='true', 
+        allow='autoplay; fullscreen; xr-spatial-tracking', 
+        xr-spatial-tracking='', 
+        execution-while-out-of-viewport='', 
+        execution-while-not-rendered='', 
+        web-share='', 
+        width='960', 
+        height='540', 
+        src='https://sketchfab.com/3d-models/scaniverse-medialab-7dd270dd046c4f6799ac96126b6566fc/embed'
+      )  

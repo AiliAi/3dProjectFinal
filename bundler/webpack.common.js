@@ -21,7 +21,9 @@ module.exports = {
         modelViewer: path.resolve(__dirname, '../src/js/modelViewer.js'),
         myWebAr: path.resolve(__dirname, '../src/js/myWebAr.js'),
         documentation: path.resolve(__dirname, '../src/js/documentation.js'),
-        mixerGuide: path.resolve(__dirname, '../src/js/mixerGuide.js')
+        mixerGuide: path.resolve(__dirname, '../src/js/mixerGuide.js'),
+        studioMP: path.resolve(__dirname, '../src/js/studioMP.js'),
+        studioLidar: path.resolve(__dirname, '../src/js/studioLidar.js')
     },
     output:
     {
@@ -195,6 +197,28 @@ module.exports = {
                     collapseWhitespace: true
                 }
             }),
+
+            new HtmlWebpackPlugin({
+              template: path.resolve(__dirname, '../src/studioMP.pug'),
+              chunks: ['studioMP'],
+              inject: true,
+              filename: 'studioMP.html',
+              minify: {
+                  removeComments: true,
+                  collapseWhitespace: true
+              }
+          }),
+
+          new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, '../src/studioLidar.pug'),
+            chunks: ['studioLidar'],
+            inject: true,
+            filename: 'studioLidar.html',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
+        }),
             new webpack.ProvidePlugin({
                 '$': 'jquery',
                 'jQuery': 'jquery',

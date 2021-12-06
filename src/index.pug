@@ -3,112 +3,62 @@ block append head
   title=  'Home'
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
 block append content
-  div(class="loading-bar")
-  div(id="container") 
-    div#heading-text.d-flex.flex-column.align-items-center.p-5
-      h1.px-3.text-center VIRTUAL TOURS AND 3D MODELS ON WEB-PAGE
-      p.px-3.text-pos.text-center The objectives of our project were to compare Matterport and Lidar 3D imaging technologies and explore how these could be used on the web.
-      a.btn.btn-outline-info.fw-normal#main-btn(href='#home-container', role='button') LEARN MORE
-
+  .container-fluid.m-0.p-0(class="loading-bar")
+    .row.m-0.p-0.g-0(id="container") 
+      .col-md-6#heading-text.d-flex.flex-column.align-items-center.p-5
+        h1.px-3.text-center VIRTUAL TOURS AND 3D MODELS ON WEB-PAGE
+        p.px-3.text-pos.text-center The aims of this project were to explore 3D imaging technologies and to demonstrate how 3D content can be used on the web. 
+        a.btn.blue-btn.fw-normal#main-btn(href='#info-container', role='button') LEARN MORE
+  .container#info-container
+    .row.my-4
+      .col 
+        h2.text-center Info
+    .row.bg-light
+      .col.p-5
+        p In this project, we:
+        ul.m-0.p-0
+          li.d-flex
+            .bi.bi-check2-circle.px-2
+            p.py-2 created 3D model of a space using LiDAR scanner and Matterport camera
+          li.d-flex
+            .bi.bi-check2-circle.px-2
+            p.py-2 made a virtual tour of the Karamalmi kampus (floors 5 and 6)
+          li.d-flex
+            .bi.bi-check2-circle.px-2
+            p.py-2 tested virtual tour applications to create both simple 360 panorama viewers and more immersive 3D virtual tours
+          li.d-flex
+            .bi.bi-check2-circle.px-2
+            p.py-2 tested photogrammetry of an object
+          li.d-flex
+            .bi.bi-check2-circle.px-2
+            p.py-2 considered how 3D models and virtual tours could be used on the web in the context of technical guides (??)      
   .container#home-container
     .row.my-4
       .col 
-        h2.text-center Technical guide of using the media lab
+        h2.text-center 3D models: Media lab
     .row.row-cols-1.row-cols-md-2
       .col.bg-light.d-flex.flex-column.align-items-center.py-5#left
         i.bi.bi-tablet.pb-2
         h3 LiDAR  
         p.text-center A 3D model of the studio created with Canvas scanner app on iPad Pro 2020. 
-        a.btn.btn-outline-info.fw-normal#btn-left(href='#', role='button') VIEW 3D MODEL                        
+        a.btn.blue-outline.fw-normal#btn-left(href='studioLidar.html', role='button') VIEW 3D MODEL                        
       .col.d-flex.flex-column.align-items-center.py-5#right
         i.bi.bi-camera.pb-2
         h3 Matterport
         p.text-center A 3D model and a virtual tour of the studio created with Matterport Pro2 3D camera. 
-        a.btn.btn-outline-light.fw-normal#btn-right(href='matterport.html', role='button') VIEW 3D MODEL
+        a.btn.btn-outline-light.fw-normal#btn-right(href='studioMP.html', role='button') VIEW 3D MODEL
     .row.mt-4
-  .container#documentation-container
+  .container#tour-container.mb-5
     .row.my-4
-        .col 
-          h2.text-center Documentation 
-    .row.bg-dark.text-light
-      .col.p-5
-        h3.text-center#tourApps Virtual tour technologies we tested
-        p.text-center All of the following web aplications/libraries require 360 photos to create a virtual tour.
-        ul 
-          li
-            a(href="https://krpano.com/home/" class="link-primary mt-3 mb-5" alt="web link to Krpano page") Krpano
-            ol + Makes virtual tour from depthmaps, use 
-              a(href="https://everpano.com/documentation" class="link-primary mt-3 mb-5" alt="web link to Everpano page") Everpano
-              |  to make dephtmaps first.
-            ol + Use 
-              a(href="https://der-mische.de/panocamadder/" class="link-primary mt-3 mb-5" alt="web link to Everpano page") PanocamAdder
-              |  plugin with blender to create 3D models from equirectangular panoramas (makes Obj file).
-            ol - Hard to use
-          li
-            a(href="https://homes.cupix.com/" class="link-primary mt-3 mb-5" alt="web link to Cupix page") Cupix
-            ol + Can generate 3D models, alternative to matterport
-          li
-            a(href="https://roundme.com" class="link-primary mt-3 mb-5" alt="web link to RoundMe page") RoundMe
-            ol + Simple and easy to use
-          li
-            a(href="https://pannellum.org" class="link-primary mt-3 mb-5" alt="web link to Krpano page") Pannellum
-            ol + Open source panorama viewer for the web
-            ol + Easy to use
-          li
-            a(href="https://pchen66.github.io/panolens.js/#Home" class="link-primary mt-3 mb-5" alt="web link to Panolens page") Panolens.js
-
-          li
-            a(href="https://www.momento360.com" class="link-primary mt-3 mb-5" alt="web link to Momento360 page") Momento360
-          li
-            a(href="https://www.marzipano.net/" class="link-primary mt-3 mb-5" alt="web link to Marzipano page") Marzipano
-          li
-            a(href="https://threejs.org" class="link-primary mt-3 mb-5" alt="web link to Threejs page") Three.js
-            ol + Advanced level 
-            ol + Used as a base for other panorama viewer libraries
-            ol - hard to learn
-          li
-            a(href="https://matterport.com" class="link-primary mt-3 mb-5" alt="web link to Matterport page") Matterport
-            ol + Superiour compaired to others
-            ol + Easy to use 
-            ol - Expencive
-    .row
-      p
-        h2#sphereToCube Sphere to cube converters
-      ul 
-        li
-          a(href="https://nadirpatch.com/sphere2cube/" class="link-primary mt-3 mb-5" alt="web link to Nadirpatch page") Nadirpatch
-        li
-          a(href="https://jaxry.github.io/panorama-to-cubemap/" class="link-primary mt-3 mb-5" alt="web link to jaxry.github.io page") jaxry.github.io
-        li
-          a(href="https://github.com/matheowis/HDRI-to-CubeMap" class="link-primary mt-3 mb-5" alt="web link to Matheowis page") Matheowis
-          ol + Open source
-          ol + Can choose picture quality
-          ol + Pictures won't be loaded on someone's other server
-    .row
-      p
-        h2#photoStiching Photo stitching software
-      ul 
-        li
-          a(href="https://www.ptgui.com" class="link-primary mt-3 mb-5" alt="web link to PTGui page") PTGui
-          ol + Easy to use, automatic
-        li
-          a(href="https://alicevision.org" class="link-primary mt-3 mb-5" alt="web link to Meshroom page") Meshroom
-          ol + Free 
-          ol - Not for mac
-        li
-          a(href="https://www.capturingreality.com/" class="link-primary mt-3 mb-5" alt="web link to Capturingreality page") Capturingreality
-        li
-          a(href="https://www.easypano.com/" class="link-primary mt-3 mb-5" alt="web link to Easypano page") Easypano
-        li
-          a(href="http://hugin.sourceforge.net/" class="link-primary mt-3 mb-5" alt="web link to Hugin page") Hugin
-          ol + Free 
-          ol + Hard to use
-    .row
-      p
-        h2#popularCameras Popular 3D auto stitching cameras
-      ul 
-        li Yi
-        li Insta360 One
-        li Mi Sphere
-        li Qoocam
-        li Fusion
+      .col 
+        h2.text-center Virtual tour in Karamalmi campus
+    .row#tour-image-container
+      .col#tour-image.d-flex.justify-content-center.align-items-center
+        a.btn.blue-btn#tour-button(href='matterport.html', role='button') View virtual tour
+        
+        
+        
+      
+ 
+  
+        
