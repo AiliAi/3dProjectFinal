@@ -137,7 +137,7 @@ function animate() {
 
 function update() {
   if (isUserInteracting === false) {
-    //lon += 0.1;
+    lon += 0.01;
   }
 
   lat = Math.max(-85, Math.min(85, lat));

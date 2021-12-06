@@ -23,7 +23,9 @@ module.exports = {
         documentation: path.resolve(__dirname, '../src/js/documentation.js'),
         mixerGuide: path.resolve(__dirname, '../src/js/mixerGuide.js'),
         studioMP: path.resolve(__dirname, '../src/js/studioMP.js'),
-        studioLidar: path.resolve(__dirname, '../src/js/studioLidar.js')
+        studioLidar: path.resolve(__dirname, '../src/js/studioLidar.js'),
+        metareal: path.resolve(__dirname, '../src/js/metareal.js')
+
     },
     output:
     {
@@ -219,6 +221,17 @@ module.exports = {
                 collapseWhitespace: true
             }
         }),
+
+        new HtmlWebpackPlugin({
+          template: path.resolve(__dirname, '../src/metareal.pug'),
+          chunks: ['metareal'],
+          inject: true,
+          filename: 'metareal.html',
+          minify: {
+              removeComments: true,
+              collapseWhitespace: true
+          }
+      }),
             new webpack.ProvidePlugin({
                 '$': 'jquery',
                 'jQuery': 'jquery',

@@ -40,7 +40,7 @@ homeText.addEventListener('mouseenter', e => {
 });
 
 homeText.addEventListener('mouseleave', e => {
-  mainBtn.classList.add('blue-btn');
+  mainBtn.className ='btn btn-outline-light'
   
 });
 
