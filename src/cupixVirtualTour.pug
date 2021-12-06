@@ -1,17 +1,14 @@
 extends layout.pug
 block append head
-    title=  'Cupix'
+    title=  'Cupix tour'
 block append content
   .container
     .row 
-      .h1.mt-3.mb-0 Cupix
+      .main-heading.mt-3.mb-0 Cupix tour
     .row 
       .d-flex.flex-row-reverse
-        i(
-          class="bi bi-info-circle-fill" 
-          data-bs-toggle="tooltip" 
-          data-bs-placement="bottom" 
-          title="360-degree images taken with a Matterport camera on the Metropolia Karamalmi campus, uploaded to Cupix web application and iframe link added to the website.")
+        a(href="#info")
+          i(class="bi bi-info-circle-fill")   
     .row
       iframe(
         style="max-width: 100%;" 
@@ -21,6 +18,55 @@ block append content
         allowfullscreen 
         src="https://players.cupix.com/embed.html?key=5yIpYTiz"
       )
-    .row
-      a(href="https://homes.cupix.com" class="link-primary mt-3 mb-5" alt="web link to cupix page") homes.cupix.com
-    
+    .d-flex.align-items-center.cont-up
+      .h1-doc#info Info
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Used
+      .flex-grow-1
+        ul 
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Professional virtual tour experience
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Matterport Pro2 camera
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Cupix web-app for free with limits
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Working Process
+      .flex-grow-1
+        ul
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc 360-degree images taken with a Matterport camera on the Metropolia Karamalmi campus
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc 360-degree images downloaded from Matterport cloud and uploaded to Cupix web application
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Cupix generates automatically virtual tour and a model from pictures if selected
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc  Iframe link added to the website.
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Where to use
+      .flex-grow-1
+        ul
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc Real estate to give a better understanding of the appartment to the potential buyer
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc Any kind of virtual tour: gallery, shop, school, workplace
+    .d-flex.align-items-center.cont-up.mb-5
+      .flex-shrink-0.heading-cont
+        .h2-doc Webpages
+      .flex-grow-1
+        ul 
+          li
+            a(href="https://homes.cupix.com" class="link-primary mt-3 mb-5" alt="web link to cupix page") homes.cupix.com
+          
