@@ -76,6 +76,21 @@
       "image": "thumbnails/photogrammetry.PNG",
       "description": "Photogrammetry, pictures taken with iphone, Three.js library for free, Meshroom for free",
       "link": "threeTest.html"
+    },
+    {
+      "title": "Media lab virtual tour",
+      "type": "tour",
+      "image": "thumbnails/photogrammetry.PNG",
+      "description": "Media lab tour",
+      "link": "studioMP.html"
+    },
+    {
+      "title": "Metareal virtual tour",
+      "type": "tour",
+      "image": "thumbnails/photogrammetry.PNG",
+      "description": "Media lab tour made with Metareal",
+      "link": "metareal.html"
     }
+
   ]
 }

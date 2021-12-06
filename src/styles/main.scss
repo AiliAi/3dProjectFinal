@@ -35,7 +35,7 @@
 #heading-text {
   position: absolute;
   z-index: 99;
-  background-image: linear-gradient(120deg, rgba(234, 238, 68, 0.95), rgba(64, 173, 250, 0.95));
+  background-image: linear-gradient(120deg, rgba(190, 47, 254, 0.95), rgba(64, 173, 250, 0.95));
   padding: 0.5em;
   border-radius: 10px;
 
@@ -110,7 +110,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(120deg, rgba(234, 238, 68, 0.6), rgba(64, 173, 250, 0.6));
+    background-image: linear-gradient(120deg, rgba(190, 47, 254, 0.6), rgba(64, 173, 250, 0.6));
   }
 }
 
@@ -165,3 +165,20 @@ ul {
   background-color: #40adfa;
 }
 //background-color: #4363BB;
+
+//Studio guide
+
+.icon-button {
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid $blue;
+  color: $blue;
+  &:hover {
+    background-color: $blue;
+    border: 2px solid $blue;
+    color: white !important;
+  }
+  .bi {
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,25 @@
+extends layout.pug
+block append head
+    title=  'Metareal'
+block append content
+  .container
+    .row 
+      .h1.mt-3.mb-0 Metareal virtual tour
+    .row 
+      .d-flex.flex-row-reverse
+        i(
+          class="bi bi-info-circle-fill" 
+          data-bs-toggle="tooltip" 
+          data-bs-placement="bottom" 
+          title="Metareal virtual tour")
+    .row
+      iframe(
+        id="metareal-tour"
+        width="853"
+        height="480"
+        frameborder="0"
+        allowfullscreen
+        allow="xr-spatial-tracking")
+    .row
+      a(href="https://www.metareal.com/" class="link-primary mt-3 mb-5" alt="web link to matterport page") metareal.com
+
