@@ -6,11 +6,67 @@ block append head
 block append content
   .container
     .row
-      .h1.mt-3.mb-0 Pannellum
+      .main-heading.mt-3.mb-0 Pannellum
     .row
       .d-flex.flex-row-reverse
-        i.bi.bi-info-circle-fill(data-bs-toggle='tooltip', data-bs-placement='bottom', title='A virtual tour of the Metropolia University Karamalmi Campus with the Pannellum Panorama Viewer. Pictures taken with a Garmin Virb 360 camera. Html div element with heigth added to the website.')
+        a(href="#info")
+          i(class="bi bi-info-circle-fill")   
     .row
       #panorama.p-0(style='height: 480px')
-    .row
-      a.link-primary.mt-3.mb-5(href='https://pannellum.org') pannellum.org
+    .d-flex.align-items-center.cont-up
+      .h1-doc#info Info
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Used
+      .flex-grow-1
+        ul 
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Lightweight virtual tour experience
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc 360-degree images taken with Matterport Pro2 and Carmin Virb camera
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Pannellum panorama viewer library for free
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Working Process
+      .flex-grow-1
+        ul
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Pictures taken with a Garmin Virb 360 camera at Metropolia Karamalmi campus
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Some pictures of school virtual tour downloaded from Matterport cloud
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc 360-degree pictures converted with sphere to cube converter into cube pictures (back, down, front, left, right, top)
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Panorama experience created with Pannellum panorama viewer library
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Hotspots added
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc An html div element with height added to the website.
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Where to use
+      .flex-grow-1
+        ul
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc Real estate to give a better understanding of the appartment to the potential buyer
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc Any kind of lightweight virtual tour: gallery, shop, school, workplace
+    .d-flex.align-items-center.cont-up.mb-5
+      .flex-shrink-0.heading-cont
+        .h2-doc Webpages
+      .flex-grow-1
+        ul 
+          li
+            a.link-primary.mt-3.mb-5(href='https://pannellum.org') pannellum.org

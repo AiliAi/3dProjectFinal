@@ -4,77 +4,77 @@
       "title": "Cupix model",
       "type": "model",
       "image": "thumbnails/cupixModel.PNG",
-      "description": "Photogrammetry, 360-degree images taken with Matterport camera, Three.js library for free, Cupix web-app for free with limits, Model generation",
+      "description": "Photogrammetry, 3D model of classroom generated with Cupix web-app",
       "link": "cupixModel.html"
     },
     {
       "title": "Cupix tour",
       "type": "tour",
       "image": "thumbnails/cupixVirtualTour.PNG",
-      "description": "Professional virtual tour experience, 360-degree images taken with Matterport camera, Cupix web-app for free with limits",
+      "description": "Professional virtual tour, Generated with Cupix web-app",
       "link": "cupixVirtualTour.html"
     },
     {
       "title": "Matterport",
       "type": "tour",
       "image": "thumbnails/matterport.PNG",
-      "description": "Professional virtual tour experience, Matterport camera and web-app, Monthly fee with in-app purchases",
+      "description": "Professional virtual tour, Generated with Matterport web-app",
       "link": "matterport.html"
     },
     {
       "title": "Three.js",
       "type": "model",
       "image": "thumbnails/Q_Unicorn.jpg",
-      "description": "Photogrammetry, Qlone mobile app for Android/ios for free with limits, Three.js library for free",
+      "description": "Photogrammetry, 3D model viewer with Three.js library",
       "link": "qloneModel.html"
     },
     {
       "title": "Sketchfab",
       "type": "model",
       "image": "thumbnails/poster_Mussel.jpg",
-      "description": "Photogrammetry, Qlone mobile app for Android/ios for free with limits, Sketchfab web-app for free with limits",
+      "description": "Photogrammetry, 3D model viewer with Sketchfab web-app",
       "link": "sketchfab.html"
     },
     {
       "title": "Pannellum",
       "type": "tour",
       "image": "thumbnails/pannellum.PNG",
-      "description": "Lightweight tour, 360-degree images taken with Matterport and Carmin Virb camera, Pannellum panorama viewer library for free",
+      "description": "Lightweight virtual tour, Created with Pannellum panorama viewer library",
       "link": "pannellum.html"
     },
     {
       "title": "Roundme",
       "type": "tour",
       "image": "thumbnails/roundme.PNG",
-      "description": "Lightweight tour, 360-degree images taken with Carmin Virb camera, Roundme web-app for free with limits",
+      "description": "Lightweight virtual tour, Created with Roundme web-app",
       "link": "roundme.html"
     },
     {
       "title": "Model-viewer + AR",
       "type": "model",
       "image": "thumbnails/poster_Elephant.jpg",
-      "description": "Photogrammetry, Qlone mobile app for Android/ios for free with limits, Google Model-viewer library with AR for free",
+      "description": "Photogrammetry, 3D model viewer with Google Model-viewer library",
       "link": "modelViewer.html"
     },
     {
       "title": "MyWebAr",
       "type": "model",
       "image": "thumbnails/myWebAr.png",
-      "description": "Photogrammetry, Qlone mobile app for Android/ios for free with limits, MyWebAr Augmented Reality web-app for free with limits",
+      "description": "Photogrammetry, MyWebAr Augmented Reality web-app",
       "link": "myWebAr.html"
     },
     {
       "title": "Mixer quide",
       "type": "model",
       "image": "thumbnails/poster_mixer.png",
-      "description": "Photogrammetry, Polycam mobile app for ios for free with limits, Google Model-viewer library with AR for free",
+      "description": "Photogrammetry, 3D mixer guidance with Model-viewer library",
       "link": "mixerGuide.html"
     },
     {
       "title": "Photogrammetry test",
       "type": "model",
       "image": "thumbnails/photogrammetry.PNG",
-      "description": "Photogrammetry, pictures taken with iphone, Three.js library for free, Meshroom for free",
+      "description": "Photogrammetry, Testing Three.js library and Meshroom picture stitcher",
       "link": "threeTest.html"
     }
   ]

@@ -4,6 +4,7 @@
 
 .main-heading {
     color: $purle;
+    font-family: 'PT Serif', serif;
   }
 
 .h1-doc {
@@ -11,11 +12,14 @@
     line-height: 1;
     margin-right: 2em;
     color: $magenta;
+    padding-bottom: 0.4em;
+    font-family: 'PT Serif', serif;
 }
 
 .bolder-text {
     font-weight: 500;
 }
+
 
 /*a:link, a:visited, a:active {
     color: $purle !important;
@@ -23,18 +27,20 @@
 
 .card-title {
     color: $magenta;
+    font-family: 'PT Serif', serif;
 }
 
 .h2-doc {
     font-size: 2.2em;
     line-height: 1;
     margin-right: 2em;
-    padding-bottom: 0.8em;
+    padding-bottom: 0.4em;
 }
 
 .cont-up {
     border-bottom: 1px solid black;
     padding: 1.5em;
+    padding-bottom: 0.8em;
 }
 
 .bi.bi-plus, .bi.bi-dash, .bi.bi-arrow-right, .bi.bi-lightbulb, .bi.bi-dot {
