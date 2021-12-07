@@ -43,7 +43,7 @@
     padding-bottom: 0.8em;
 }
 
-.bi.bi-plus, .bi.bi-dash, .bi.bi-arrow-right, .bi.bi-lightbulb, .bi.bi-dot {
+.bi.bi-plus, .bi.bi-dash, .bi.bi-arrow-right, .bi.bi-lightbulb, .bi.bi-lightbulb-fill {
  font-size: 1.2em;
  padding-right: 0.5em;
  margin-top: -0.1em;
@@ -51,12 +51,12 @@
  -webkit-text-stroke: 0.04em;
 }
 
-.bi.bi-info-circle-fill {
+.bi.bi-info-circle-fill, .bi.bi-lightbulb-fill {
     color: $blue;
     cursor: help;
 }
 
-.bi.bi-info-circle-fill:hover{
+.bi.bi-info-circle-fill:hover, .bi.bi-lightbulb-fill:hover{
     color: $blueHover;
 }
 
