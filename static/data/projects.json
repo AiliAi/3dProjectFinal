@@ -71,6 +71,13 @@
       "link": "mixerGuide.html"
     },
     {
+      "title": "Media lab with Scaniverse",
+      "type": "model",
+      "image": "thumbnails/MediaLab_Scaniverse.jpg",
+      "description": "Lidar, created with Scaniverse mobile app for Ipad",
+      "link": "studioLidar.html"
+    },
+    {
       "title": "Photogrammetry test",
       "type": "model",
       "image": "thumbnails/photogrammetry.PNG",
@@ -78,19 +85,18 @@
       "link": "threeTest.html"
     },
     {
-      "title": "Media lab virtual tour",
+      "title": "Media lab with Matterport",
       "type": "tour",
-      "image": "thumbnails/photogrammetry.PNG",
-      "description": "Media lab tour",
+      "image": "thumbnails/Karamalmin-Studio-Dollhouse-View.jpg",
+      "description": "Professional virtual tour, Generated with Matterport web-app",
       "link": "studioMP.html"
     },
     {
-      "title": "Metareal virtual tour",
+      "title": "Media lab with Metareal",
       "type": "tour",
       "image": "thumbnails/photogrammetry.PNG",
-      "description": "Media lab tour made with Metareal",
+      "description": "Professional virtual tour, created with Metareal web-app",
       "link": "metareal.html"
     }
-
   ]
 }

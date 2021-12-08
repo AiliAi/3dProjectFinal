@@ -1,17 +1,14 @@
 extends layout.pug
 block append head
-  title=  'Media lab Matterport model'
+  title=  'Media lab with Matterport'
 block append content
   .container
     .row 
-      .h1.mt-3.mb-0 3D model and a virtual tour of the media lab
+      .main-heading.mt-3.mb-0 Media lab with Matterport
     .row.d-flex.justify-content-end
       .d-flex.flex-row-reverse
-        i(
-          class="bi bi-info-circle-fill" 
-          data-bs-toggle="tooltip" 
-          data-bs-placement="bottom" 
-          title="Media lab")
+        a(href="#info")
+          i(class="bi bi-info-circle-fill")   
         i(
             class="bi bi-lightbulb-fill"
             data-bs-toggle='modal'
@@ -31,6 +28,8 @@ block append content
                     button(type='button' data-bs-target='#studio-guide-carousel' data-bs-slide-to='2' aria-label='Slide 3')
                     button(type='button' data-bs-target='#studio-guide-carousel' data-bs-slide-to='3' aria-label='Slide 4')
                     button(type='button' data-bs-target='#studio-guide-carousel' data-bs-slide-to='4' aria-label='Slide 5')
+                    button(type='button' data-bs-target='#studio-guide-carousel' data-bs-slide-to='5' aria-label='Slide 6')
+                    button(type='button' data-bs-target='#studio-guide-carousel' data-bs-slide-to='6' aria-label='Slide 7')
                   .carousel-inner
                     .carousel-item.active
                       img.d-block.w-100(src='/guide/first.jpg' alt='first slide')
@@ -42,6 +41,10 @@ block append content
                       img.d-block.w-100(src='/guide/fourth.jpg' alt='fourth slide')
                     .carousel-item
                       img.d-block.w-100(src='/guide/fifth.jpg' alt='fifth slide')
+                    .carousel-item
+                      img.d-block.w-100(src='/guide/sixth.jpg' alt='sixth slide')
+                    .carousel-item
+                      img.d-block.w-100(src='/guide/seventh.jpg' alt='seventh slide')
                   button.carousel-control-prev(type='button' data-bs-target='#studio-guide-carousel' data-bs-slide='prev')
                     span.carousel-control-prev-icon(aria-hidden='true')
                     span.visually-hidden Previous
@@ -57,3 +60,65 @@ block append content
         frameborder="0"
         allowfullscreen
         allow="xr-spatial-tracking")
+    .d-flex.align-items-center.cont-up
+      .h1-doc#info Info
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Used
+      .flex-grow-1
+        ul 
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Professional virtual tour experience
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Matterport Pro2 camera
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Matterport web-app, monthly fee with in-app purchases
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Working Process
+      .flex-grow-1
+        ul
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc 360-degree scans taken with Matterport camera at Metropolia Karamalmi campus
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Scans were uploaded automatically to Matterport cloud. 
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Model and virtual tour was ready to look after 3-5 hours
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Added some mattertags for extra information
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Iframe link added to the website.
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Where to use
+      .flex-grow-1
+        ul
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc Real estate to give a better understanding of the appartment to the potential buyer
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc Any kind of virtual tour: gallery, shop, school, workplace
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc Architecture/construction if buy CAD and BIM files
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc When combine with viewAR can make an AR Indoor Navigation, AR Remote Assistance,  AR Product Visualization solution
+    .d-flex.align-items-center.cont-up.mb-5
+      .flex-shrink-0.heading-cont
+        .h2-doc Webpages
+      .flex-grow-1
+        ul 
+          li
+            a(href="https://matterport.com" class="link-primary mt-3 mb-5" alt="web link to matterport page") matterport.com
+          li
+            a(href="https://www.viewar.com" class="link-primary mt-3 mb-5" alt="web link to viewAR page") viewar.com
