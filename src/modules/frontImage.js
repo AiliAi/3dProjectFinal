@@ -1,6 +1,8 @@
 
 import './nav-loading';
 import * as THREE from "three";
+import { gsap } from 'gsap'
+
 
 let camera, scene, renderer;
 let navbar = 56;
@@ -20,7 +22,8 @@ animate();
 
 function init() {
   const container = document.getElementById("container");
-  container.style.backgroundImage = `url('placeholder.jpg')`
+  container.style.backgroundImage = `url('pictures/placeholderFront.jpg')`
+  gsap.from(container, {autoAlpha: 0, x:0, duration:1.5})
 
   camera = new THREE.PerspectiveCamera(
     75,
