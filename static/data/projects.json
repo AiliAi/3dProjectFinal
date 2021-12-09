@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Cupix model",
-      "type": ["model", "lidar"],
+      "type": ["model", "photogrammetry"],
       "image": "thumbnails/cupixModel.PNG",
       "description": "Photogrammetry, 3D model of classroom generated with Cupix web-app",
       "link": "cupixModel.html"
@@ -73,7 +73,7 @@
     },
     {
       "title": "Media lab with Scaniverse",
-      "type": "model",
+      "type": ["model", "lidar"],
       "image": "thumbnails/MediaLab_Scaniverse.jpg",
       "description": "Lidar, created with Scaniverse mobile app for Ipad",
       "link": "studioLidar.html"
