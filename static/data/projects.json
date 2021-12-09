@@ -79,6 +79,34 @@
       "link": "studioLidar.html"
     },
     {
+      "title": "Point-cloud PLY",
+      "type": ["model", "lidar"],
+      "image": "thumbnails/poster_face.jpg",
+      "description": "TrueDepth 3D camera, Created with Standard Cyborg Capture mobile app",
+      "link": "trueDepthPLY.html"
+    },
+    {
+      "title": "Point-cloud to USDZ",
+      "type": ["model", "lidar"],
+      "image": "thumbnails/poster_faceUSDZ.jpg",
+      "description": "TrueDepth 3D camera, Created with Standard Cyborg Capture mobile app",
+      "link": "trueDepthUSDZ.html"
+    },
+    {
+      "title": "Point-cloud to mesh",
+      "type": ["model", "lidar"],
+      "image": "thumbnails/poster_meshlab.jpg",
+      "description": "TrueDepth 3D camera, Created with Standard Cyborg Capture mobile app",
+      "link": "trueDepthMesh.html"
+    },
+    {
+      "title": "Lidar tests",
+      "type": "model",
+      "image": "thumbnails/MediaLab_Scaniverse.jpg",
+      "description": "LiDAR scan, Created with Scaniverse mobile app",
+      "link": "lidarTests.html"
+    },
+    {
       "title": "Photogrammetry test",
       "type": ["model", "photogrammetry"],
       "image": "thumbnails/photogrammetry.PNG",
@@ -86,16 +114,16 @@
       "link": "threeTest.html"
     },
     {
-      "title": "Media lab virtual tour",
+      "title": "Media lab with Matterport",
       "type": ["tour"],
-      "image": "thumbnails/photogrammetry.PNG",
-      "description": "Media lab tour",
+      "image": "thumbnails/Karamalmin-Studio-Dollhouse-View.jpg",
+      "description": "Professional virtual tour, Generated with Matterport web-app",
       "link": "studioMP.html"
     },
     {
-      "title": "Metareal virtual tour",
+      "title": "Media lab with Metareal",
       "type": ["tour"],
-      "image": "thumbnails/photogrammetry.PNG",
+      "image": "thumbnails/poster_metareal.jpg",
       "description": "Professional virtual tour, created with Metareal web-app",
       "link": "metareal.html"
     }
