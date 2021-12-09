@@ -1,3 +1,5 @@
+
+import './nav-loading';
 import * as THREE from "three";
 
 let camera, scene, renderer;
@@ -18,6 +20,7 @@ animate();
 
 function init() {
   const container = document.getElementById("container");
+  container.style.backgroundImage = `url('placeholder.jpg')`
 
   camera = new THREE.PerspectiveCamera(
     75,
@@ -33,7 +36,7 @@ function init() {
   geometry.scale(-1, 1, 1);
 
   const texture = new THREE.TextureLoader().load(
-    "pictures/Karaportti-aula.jpg"
+    "pictures/medialab.jpg"
   );
   const material = new THREE.MeshBasicMaterial({ map: texture });
 
@@ -41,7 +44,7 @@ function init() {
 
   scene.add(mesh);
 
-  renderer = new THREE.WebGLRenderer();
+  renderer = new THREE.WebGLRenderer({ alpha: true });
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight - navbar);
   container.appendChild(renderer.domElement);
@@ -137,7 +140,7 @@ function animate() {
 
 function update() {
   if (isUserInteracting === false) {
-    lon += 0.01;
+    lon += 0.02;
   }
 
   lat = Math.max(-85, Math.min(85, lat));
