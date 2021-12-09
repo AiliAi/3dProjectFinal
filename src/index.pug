@@ -5,59 +5,116 @@ block append head
 block append content
   .container-fluid.m-0.p-0(class="loading-bar")
     .row.m-0.p-0.g-0(id="container") 
-      .col-md-6#heading-text.d-flex.flex-column.align-items-center.p-5
-        h1.px-3.text-center VIRTUAL TOURS AND 3D MODELS ON WEB-PAGE
-        p.px-3.text-pos.text-center The aims of this project were to explore 3D imaging technologies and to demonstrate how 3D content can be used on the web. 
-        a.btn.btn-outline-light.fw-normal#main-btn(href='#info-container', role='button') LEARN MORE
-  .container#info-container
+      .col-md-8#heading-text.d-flex.flex-column.align-items-center.py-4.px-md-3
+        .col
+          h1.px-3.py-3.text-center VIRTUAL TOURS AND 3D MODELS ON WEB-PAGE
+        .col-md-8.d-flex.flex-column.align-items-center
+          p.px-3.text-pos.text-center The aims of this project were to explore 3D imaging technologies and to demonstrate how 3D content can be used on the web. 
+          a.btn.btn-outline-light.fw-normal#main-btn(href='#info-container', role='button') READ MORE
+  .container-md#info-container
     .row.my-4
       .col 
-        h2.text-center Info
-    .row.bg-light
-      .col.p-5
-        p In this project, we:
-        ul.m-0.p-0
-          li.d-flex
-            .bi.bi-check2-circle.px-2
-            p.py-2 created 3D model of a space using LiDAR scanner and Matterport camera
-          li.d-flex
-            .bi.bi-check2-circle.px-2
-            p.py-2 made a virtual tour of the Karamalmi kampus (floors 5 and 6)
-          li.d-flex
-            .bi.bi-check2-circle.px-2
-            p.py-2 tested virtual tour applications to create both simple 360 panorama viewers and more immersive 3D virtual tours
-          li.d-flex
-            .bi.bi-check2-circle.px-2
-            p.py-2 tested photogrammetry of an object
-          li.d-flex
-            .bi.bi-check2-circle.px-2
-            p.py-2 considered how 3D models and virtual tours could be used on the web in the context of technical guides (??)      
-  .container#home-container
+        h1.text-center About
+    .row.row-cols-1.row-cols-md-2.bg-light.px-3.pt-5
+      .col.d-flex.flex-column
+        i(class="bi bi-badge-3d")
+        h2.pb-2 Comparison of 3D models  
+        p.px-md-3 We scanned the media lab using both LiDAR scanner and Matterport to compare the process and outcome. We also discuss possible use cases for both techniques. 
+      .col.d-flex.flex-column
+        i(class="bi bi-arrow-repeat")
+        h2.pb-2 Creating virtual tours  
+        p.px-md-3 We created a virtual tour of Karamalmi campus and a guide of media lab usage. We tested several 360 panorama and virtual tour applications.
+    .row.row-cols-1.row-cols-md-2.bg-light.px-3.pb-5
+      .col.d-flex.flex-column
+        i(class="bi bi-images")
+        h2.pb-2 Testing photogrammetry
+        p.px-md-3 We tried photogrammetry of an object to see how the result compares to LiDAR scans. 
+      .col.d-flex.flex-column
+        i(class="bi bi-compass")
+        h2.pb-2 Testing VimAI
+        p.px-md-3 We tested VimAI, an image-based indoor navigation application.           
+  .container-md#home-container
     .row.my-4
       .col 
-        h2.text-center 3D models: Media lab
+        h1.text-center 3D models: Media lab
     .row.row-cols-1.row-cols-md-2
       .col.bg-light.d-flex.flex-column.align-items-center.py-5#left
-        i.bi.bi-tablet.pb-2
-        h3 LiDAR  
-        p.text-center A 3D model of the studio created with Canvas scanner app on iPad Pro 2020. 
+        i.bi.bi-tablet.pb-2 
+        h2 LiDAR
+        p.text-center A 3D model of the studio created with Scaniverse scanner app on iPad Pro 2020.
+        ul 
+          li.d-flex 
+            i(class="bi bi-plus")
+            span.text-doc Easy and relatively fast
+          li.d-flex 
+            i(class="bi bi-plus")
+            span.text-doc Exportable model (mesh and point cloud)
+          li.d-flex 
+            i(class="bi bi-plus")
+            span.text-doc Suitable for outdoor scans
+          li.d-flex 
+            i(class="bi bi-dash")
+            span.text-doc Inaccurate details and lines
+           
         a.btn.blue-outline.fw-normal#btn-left(href='studioLidar.html', role='button') VIEW 3D MODEL                        
       .col.d-flex.flex-column.align-items-center.py-5#right
         i.bi.bi-camera.pb-2
-        h3 Matterport
-        p.text-center A 3D model and a virtual tour of the studio created with Matterport Pro2 3D camera. 
+        h2 Matterport
+        p.text-center A 3D model and a virtual tour of the studio created with Matterport Pro2 3D camera.
+        ul 
+          li.d-flex 
+            i(class="bi bi-plus")
+            span.text-doc Fast and easy
+          li.d-flex 
+            i(class="bi bi-plus")
+            span.text-doc Fairly accurate details compared to LiDAR
+          li.d-flex 
+            i(class="bi bi-plus")
+            span.text-doc Also creates a virtual tour automatically
+          li.d-flex 
+            i(class="bi bi-dash")
+            span.text-doc Expensive and limiting 
         a.btn.btn-outline-light.fw-normal#btn-right(href='studioMP.html', role='button') VIEW 3D MODEL
     .row.mt-4
-  .container#tour-container.mb-5
+  .container-md#tour-container.mb-5
     .row.my-4
       .col 
-        h2.text-center Virtual tour in Karamalmi campus
+        h1.text-center Karamalmi campus virtual tour
     .row#tour-image-container
       .col#tour-image.d-flex.justify-content-center.align-items-center
-        a.btn.blue-btn#tour-button(href='matterport.html', role='button') View virtual tour
-        
-        
-        
+        .col-md-8.d-flex.flex-column.justify-content-center.align-items-center
+          h2.fs-4.text-center.fw-bold A virtual tour and a 3D model of Karamalmi campus
+          p.text-center Created with Matterport Pro2 3D camera
+          a.btn.btn-outline-light.tour-button(href='matterport.html', role='button') View virtual tour
+    .container-md#vimai-container
+    .row.my-4
+      .col 
+        h1.text-center Testing VimAI
+    .row.row-cols-1.row-cols-md-2
+      .col.d-flex.flex-column.align-items-center.bg-light.py-3#vimai-text-container
+        h2 VimAI
+        p VimAI is an image-based indoor navigation application. We scanned a small area in Karamalmi campus using VimAI mapping application on Android mobile phone. Then, we tested AR navigation in the mapped area with VimAI's navigation application.
+        a.align-self-start(href='https://vim.ai/', role='button' target="_blank") VimAI                        
+      .col.d-flex.flex-column.align-items-center.bg-light
+        #vimai-carousel.carousel.slide(data-bs-ride='carousel')
+          .carousel-indicators
+            button.active(type='button' data-bs-target='#vimai-carousel' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+            button(type='button' data-bs-target='#vimai-carousel' data-bs-slide-to='1' aria-label='Slide 2')
+            button(type='button' data-bs-target='#vimai-carousel' data-bs-slide-to='2' aria-label='Slide 3')
+          .carousel-inner
+            .carousel-item.active
+              img.d-block.w-100(src='/placeholder.jpg' alt='first slide')
+            .carousel-item
+              img.d-block.w-100(src='/placeholder.jpg' alt='second slide')
+            .carousel-item
+              img.d-block.w-100(src='/placeholder.jpg' alt='third slide')
+            button.carousel-control-prev(type='button' data-bs-target='#vimai-carousel' data-bs-slide='prev')
+              span.carousel-control-prev-icon(aria-hidden='true')
+              span.visually-hidden Previous
+            button.carousel-control-next(type='button' data-bs-target='#vimai-carousel' data-bs-slide='next')
+              span.carousel-control-next-icon(aria-hidden='true')
+              span.visually-hidden Next
+
       
  
   

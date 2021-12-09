@@ -7,9 +7,9 @@ const createCard = async (type) => {
   const cardsContainer = document.querySelector(".cards-container");
 
   //cardsContainer.innerHTML = "";
-
+  
   for (const project of data.projects) {
-    if (project.type === type) {
+    if (project.type.indexOf(type) > -1) {
       const cardCol = document.createElement("div");
       cardCol.className = "col";
 
