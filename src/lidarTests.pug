@@ -1,0 +1,84 @@
+extends layout.pug
+block append head
+    title=  'Lidar tests'
+block append content
+  .container 
+    .row 
+      .main-heading.mt-3.mb-0 Lidar tests
+    .row 
+      .d-flex.flex-row-reverse
+        a(href="#info")
+          i(class="bi bi-info-circle-fill")   
+    .row 
+      iframe(
+        title='Lidar tests', 
+        frameborder='0', 
+        allowfullscreen='', 
+        mozallowfullscreen='true', 
+        webkitallowfullscreen='true', 
+        allow='autoplay; fullscreen; xr-spatial-tracking', 
+        xr-spatial-tracking='', 
+        execution-while-out-of-viewport='', 
+        execution-while-not-rendered='', 
+        web-share='', 
+        width='960', 
+        height='540', 
+        src='https://sketchfab.com/3d-models/scaniverse-medialab-7dd270dd046c4f6799ac96126b6566fc/embed'
+      )  
+    .d-flex.align-items-center.cont-up
+      .h1-doc#info Info
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Used
+      .flex-grow-1
+        ul 
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Lidar scan
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Ipad Pro 2020 that comes with Lidar technology 
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Scaniverse Lidar scanner for Ipad 
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Working Process
+      .flex-grow-1
+        ul
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc The model was scanned with Scaniverse Lidar scanner app for Ipad
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Scan was uploaded to computer and then to the Scketsfab
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Iframe link added to the website.
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Where to use
+      .flex-grow-1
+        ul
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc To show space for others or keep in memory like pictures are kept
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc Share with others some piece of a place, example like a street art
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc Use in game graphics
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc When combined with Unity and Vuforia, make an AR experience
+    .d-flex.align-items-center.cont-up.mb-5
+      .flex-shrink-0.heading-cont
+        .h2-doc Webpages
+      .flex-grow-1
+        ul 
+          li
+            a(href="https://scaniverse.com" class="link-primary mt-3 mb-5" alt="web link to scaniverse page") scaniverse.com
+          li
+            a(href="https://sketchfab.com" class="link-primary mt-3 mb-5" alt="web link to sketchfab page") sketchfab.com
+

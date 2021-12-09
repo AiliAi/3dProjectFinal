@@ -24,8 +24,11 @@ module.exports = {
         mixerGuide: path.resolve(__dirname, '../src/js/mixerGuide.js'),
         studioMP: path.resolve(__dirname, '../src/js/studioMP.js'),
         studioLidar: path.resolve(__dirname, '../src/js/studioLidar.js'),
-        metareal: path.resolve(__dirname, '../src/js/metareal.js')
-
+        metareal: path.resolve(__dirname, '../src/js/metareal.js'),
+        lidarTests: path.resolve(__dirname, '../src/js/lidarTests.js'),
+        trueDepthPLY: path.resolve(__dirname, '../src/js/trueDepthPLY.js'),
+        trueDepthUSDZ: path.resolve(__dirname, '../src/js/trueDepthUSDZ.js'),
+        trueDepthMesh: path.resolve(__dirname, '../src/js/trueDepthMesh.js')
     },
     output:
     {
@@ -140,25 +143,25 @@ module.exports = {
                 }
             }),
             new HtmlWebpackPlugin({
-              template: path.resolve(__dirname, '../src/models.pug'),
-              chunks: ['models'],
-              inject: true,
-              filename: 'models.html',
-              minify: {
-                  removeComments: true,
-                  collapseWhitespace: true
-              }
-          }),
-          new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, '../src/vTours.pug'),
-            chunks: ['vTours'],
-            inject: true,
-            filename: 'vTours.html',
-            minify: {
-                removeComments: true,
-                collapseWhitespace: true
-            }
-        }),
+                template: path.resolve(__dirname, '../src/models.pug'),
+                chunks: ['models'],
+                inject: true,
+                filename: 'models.html',
+                minify: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, '../src/vTours.pug'),
+                chunks: ['vTours'],
+                inject: true,
+                filename: 'vTours.html',
+                minify: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                }
+            }),
             new HtmlWebpackPlugin({
                 template: path.resolve(__dirname, '../src/modelViewer.pug'),
                 chunks: ['modelViewer'],
@@ -199,39 +202,76 @@ module.exports = {
                     collapseWhitespace: true
                 }
             }),
-
             new HtmlWebpackPlugin({
-              template: path.resolve(__dirname, '../src/studioMP.pug'),
-              chunks: ['studioMP'],
-              inject: true,
-              filename: 'studioMP.html',
-              minify: {
-                  removeComments: true,
-                  collapseWhitespace: true
-              }
-          }),
-
-          new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, '../src/studioLidar.pug'),
-            chunks: ['studioLidar'],
-            inject: true,
-            filename: 'studioLidar.html',
-            minify: {
-                removeComments: true,
-                collapseWhitespace: true
-            }
-        }),
-
-        new HtmlWebpackPlugin({
-          template: path.resolve(__dirname, '../src/metareal.pug'),
-          chunks: ['metareal'],
-          inject: true,
-          filename: 'metareal.html',
-          minify: {
-              removeComments: true,
-              collapseWhitespace: true
-          }
-      }),
+                template: path.resolve(__dirname, '../src/studioMP.pug'),
+                chunks: ['studioMP'],
+                inject: true,
+                filename: 'studioMP.html',
+                minify: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, '../src/studioLidar.pug'),
+                chunks: ['studioLidar'],
+                inject: true,
+                filename: 'studioLidar.html',
+                minify: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, '../src/metareal.pug'),
+                chunks: ['metareal'],
+                inject: true,
+                filename: 'metareal.html',
+                minify: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, '../src/lidarTests.pug'),
+                chunks: ['lidarTests'],
+                inject: true,
+                filename: 'lidarTests.html',
+                minify: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, '../src/trueDepthPLY.pug'),
+                chunks: ['trueDepthPLY'],
+                inject: true,
+                filename: 'trueDepthPLY.html',
+                minify: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, '../src/trueDepthUSDZ.pug'),
+                chunks: ['trueDepthUSDZ'],
+                inject: true,
+                filename: 'trueDepthUSDZ.html',
+                minify: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, '../src/trueDepthMesh.pug'),
+                chunks: ['trueDepthMesh'],
+                inject: true,
+                filename: 'trueDepthMesh.html',
+                minify: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                }
+            }),
             new webpack.ProvidePlugin({
                 '$': 'jquery',
                 'jQuery': 'jquery',
@@ -329,14 +369,14 @@ module.exports = {
                         ]
                 },
                 // Shaders
-            {
-                test: /\.(glsl|vs|fs|vert|frag)$/,
-                type: 'asset/source',
-                generator:
                 {
-                    filename: 'assets/images/[hash][ext]'
+                    test: /\.(glsl|vs|fs|vert|frag)$/,
+                    type: 'asset/source',
+                    generator:
+                    {
+                        filename: 'assets/images/[hash][ext]'
+                    }
                 }
-            }
             ]
     }
 }

@@ -2,98 +2,99 @@
   "projects": [
     {
       "title": "Cupix model",
-      "type": "model",
+      "type": ["model", "photogrammetry"],
       "image": "thumbnails/cupixModel.PNG",
       "description": "Photogrammetry, 3D model of classroom generated with Cupix web-app",
       "link": "cupixModel.html"
     },
     {
       "title": "Cupix tour",
-      "type": "tour",
+      "type": ["tour"],
       "image": "thumbnails/cupixVirtualTour.PNG",
       "description": "Professional virtual tour, Generated with Cupix web-app",
       "link": "cupixVirtualTour.html"
     },
     {
       "title": "Matterport",
-      "type": "tour",
+      "type": ["tour"],
       "image": "thumbnails/matterport.PNG",
       "description": "Professional virtual tour, Generated with Matterport web-app",
       "link": "matterport.html"
     },
     {
       "title": "Three.js",
-      "type": "model",
+      "type": ["model", "photogrammetry"],
       "image": "thumbnails/Q_Unicorn.jpg",
       "description": "Photogrammetry, 3D model viewer with Three.js library",
       "link": "qloneModel.html"
     },
     {
       "title": "Sketchfab",
-      "type": "model",
+      "type": ["model", "photogrammetry"],
       "image": "thumbnails/poster_Mussel.jpg",
       "description": "Photogrammetry, 3D model viewer with Sketchfab web-app",
-      "link": "sketchfab.html"
+      "link": "sketchfab.html",
+      "category": "photogrammetry"
     },
     {
       "title": "Pannellum",
-      "type": "tour",
+      "type": ["tour"],
       "image": "thumbnails/pannellum.PNG",
       "description": "Lightweight virtual tour, Created with Pannellum panorama viewer library",
       "link": "pannellum.html"
     },
     {
       "title": "Roundme",
-      "type": "tour",
+      "type": ["tour"],
       "image": "thumbnails/roundme.PNG",
       "description": "Lightweight virtual tour, Created with Roundme web-app",
       "link": "roundme.html"
     },
     {
       "title": "Model-viewer + AR",
-      "type": "model",
+      "type": ["model", "photogrammetry"],
       "image": "thumbnails/poster_Elephant.jpg",
       "description": "Photogrammetry, 3D model viewer with Google Model-viewer library",
       "link": "modelViewer.html"
     },
     {
       "title": "MyWebAr",
-      "type": "model",
+      "type": ["model", "photogrammetry"],
       "image": "thumbnails/myWebAr.png",
       "description": "Photogrammetry, MyWebAr Augmented Reality web-app",
       "link": "myWebAr.html"
     },
     {
       "title": "Mixer quide",
-      "type": "model",
+      "type": ["model", "photogrammetry"],
       "image": "thumbnails/poster_mixer.png",
       "description": "Photogrammetry, 3D mixer guidance with Model-viewer library",
       "link": "mixerGuide.html"
     },
     {
       "title": "Media lab with Scaniverse",
-      "type": "model",
+      "type": ["model", "lidar"],
       "image": "thumbnails/MediaLab_Scaniverse.jpg",
       "description": "Lidar, created with Scaniverse mobile app for Ipad",
       "link": "studioLidar.html"
     },
     {
       "title": "Photogrammetry test",
-      "type": "model",
+      "type": ["model", "photogrammetry"],
       "image": "thumbnails/photogrammetry.PNG",
       "description": "Photogrammetry, Testing Three.js library and Meshroom picture stitcher",
       "link": "threeTest.html"
     },
     {
-      "title": "Media lab with Matterport",
-      "type": "tour",
-      "image": "thumbnails/Karamalmin-Studio-Dollhouse-View.jpg",
-      "description": "Professional virtual tour, Generated with Matterport web-app",
+      "title": "Media lab virtual tour",
+      "type": ["tour"],
+      "image": "thumbnails/photogrammetry.PNG",
+      "description": "Media lab tour",
       "link": "studioMP.html"
     },
     {
-      "title": "Media lab with Metareal",
-      "type": "tour",
+      "title": "Metareal virtual tour",
+      "type": ["tour"],
       "image": "thumbnails/photogrammetry.PNG",
       "description": "Professional virtual tour, created with Metareal web-app",
       "link": "metareal.html"

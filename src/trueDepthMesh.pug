@@ -1,0 +1,94 @@
+extends layout.pug
+block append head
+    title=  'Point-cloud to mesh'
+block append content
+  .container 
+    .row 
+        .main-heading.mt-3.mb-0 Point-cloud to mesh
+    .row 
+        .d-flex.flex-row-reverse
+            a(href="#info")
+                i(class="bi bi-info-circle-fill")   
+    .row.d-flex.flex-column.flex-lg-row
+        .col#pic1.d-flex.flex-column-reverse
+            p.fst-italic.text-center Picture 1: taken with Standard Cyborg Capture app
+        .col#pic2.d-flex.flex-column-reverse
+            p.fst-italic.text-center Picture 2: taken with EM3D app
+    .d-flex.align-items-center.cont-up
+        .h1-doc#info Info
+    .d-flex.align-items-center.cont-up
+        .flex-shrink-0.heading-cont
+            .h2-doc Used
+        .flex-grow-1
+            ul 
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc TrueDepth 3D sensing technology that powers Face ID in the front-facing camera
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Ipad Pro 2020 that comes with TrueDepth 3D front camera
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Standard Cyborg Capture mobile app
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Meshlab app for coverting point-cloud data to mesh data
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Blender for converting Data to GLB format
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Model-viewer for testing
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc EM3d mobile app
+    .d-flex.align-items-center.cont-up
+        .flex-shrink-0.heading-cont
+            .h2-doc Working Process
+        .flex-grow-1
+            ul
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Scan taken with Ipad Pro 2020 front camera using Standard Cyborg Capture app
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Taken scan was saved and uploaded to Standard Cyborg Capture app cloud and PLY file downloaded to the computer
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Because most 3D model viewers don't support point-cloud data without mesh, followed the Standard Cyborg Capture instructions to convert point-cloud data into mesh data with Meshlab app
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Dragged PLY file into meshlab canvas and followed the instructions how to make convercion: Filters --- Remeshing, Simplification and Reconstruction --- Surface Reconstruction: Screened Poisson --- Reconstraction depth set to 12 --- apply
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Saved file into DAE format. Imported to Blender and exported to GLB
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Noticed, that file size grew too big for the web, from 24 MB to 280 MB
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Tested GLB model in Google Model-viewer editor
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Tested EM3D mobile app that is similat to Standard Cyborg Capture mobile app, but point-cloud data is converted into mesh data automatically inside their mobile app. I was not possible to export file from their app without paying for it
+    .d-flex.align-items-center.cont-up
+        .flex-shrink-0.heading-cont
+            .h2-doc Where to use
+        .flex-grow-1
+            ul
+                li.d-flex
+                    i(class="bi bi-lightbulb")
+                    .text-doc Use like avatar
+                li.d-flex
+                    i(class="bi bi-lightbulb")
+                    .text-doc Use in artworks
+    .d-flex.align-items-center.cont-up.mb-5
+        .flex-shrink-0.heading-cont
+            .h2-doc Webpages
+        .flex-grow-1
+            ul 
+                li
+                    a(href="https://www.standardcyborg.com" class="link-primary mt-3 mb-5" alt="web link to standard cyborg page") standardcyborg.com
+                li
+                    a(href="https://www.meshlab.net" class="link-primary mt-3 mb-5" alt="web link to meshlab page") meshlab.net
+

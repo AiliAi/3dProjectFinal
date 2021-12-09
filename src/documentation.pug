@@ -8,7 +8,7 @@ block append content
     .container.mb-5
         .row 
             .h1.mt-3.mb-0.mx-3.main-heading  Documentation
-        .d-flex.align-items-center.cont-up
+        .d-flex.align-items-center.cont-up#virtualTours
             .h1-doc Virtual tours
         .d-flex.align-items-center.cont-up
             .flex-shrink-0.heading-cont
@@ -95,7 +95,7 @@ block append content
                         ol.d-flex
                             i(class="bi bi-dash")
                             .text-doc Hard to use
-        .d-flex.align-items-center.cont-up
+        .d-flex.align-items-center.cont-up#modelViewers
             .h1-doc Model viewers
         .d-flex.align-items-center.cont-up
             .flex-shrink-0.heading-cont
@@ -138,6 +138,76 @@ block append content
                             i(class="bi bi-plus")
                             .text-doc Web editor
         .d-flex.align-items-center.cont-up
+            .flex-shrink-0.heading-cont
+                .h2-doc Online 3D model viewers for testing
+            .flex-grow-1
+                ul
+                    li
+                        a(href="https://gltf-viewer.donmccurdy.com" class="link-primary mt-3 mb-5" alt="web link to Gltf-viewer page") Gltf-viewer
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Have also git reprosity 
+                    li
+                        a(href="https://www.3dviewer.net/index.html" class="link-primary mt-3 mb-5" alt="web link to 3dviewer page") 3dviewer
+                    li
+                        a(href="https://modelviewer.dev/editor/" class="link-primary mt-3 mb-5" alt="web link to Model-viewer editor page") Model-viewer editor
+        .d-flex.align-items-center.cont-up
+            .flex-shrink-0.heading-cont
+                .h2-doc 3D model viewer apps/file converters
+            .flex-grow-1
+                ul
+                    li
+                        a(href="https://www.blender.org" class="link-primary mt-3 mb-5" alt="web link to Blender page") Blender
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Can import and export different formats like OBJ, DAE, PLY, GLB ...
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Clean up virtual models
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Can create difficult 3D sculptures and animations
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Free to use
+                        ol.d-flex
+                            i(class="bi bi-dash")
+                            .text-doc Hard to learn
+                    li
+                        a(href="https://www.meshlab.net/#description" class="link-primary mt-3 mb-5" alt="web link to Meshlab page") Meshlab
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Can import and export different formats like OBJ, DAE, PLY ...
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Clean up virtual models
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Can generate mesh data from point-cloud
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Free to use
+                        ol.d-flex
+                            i(class="bi bi-dash")
+                            .text-doc Can't export GLB
+                    li
+                        a(href="https://developer.apple.com/xcode/" class="link-primary mt-3 mb-5" alt="web link to Apple xcode app page") Xcode
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Can open USDZ files, which is developed by Apple and Pixar Animation Studios
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Can export different formats like OBJ, DAE ...
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Free to use
+                        ol.d-flex
+                            i(class="bi bi-dash")
+                            .text-doc Only for Mac ios system
+                        ol.d-flex
+                            i(class="bi bi-dash")
+                            .text-doc Can't export GLBT/GLD file format
+        .d-flex.align-items-center.cont-up#converters
             .h1-doc Converters
         .d-flex.align-items-center.cont-up
             .flex-shrink-0.heading-cont
@@ -165,7 +235,53 @@ block append content
                         ol.d-flex
                             i(class="bi bi-plus")
                             .text-doc Pictures won't be loaded on someone's other server
+        .d-flex.align-items-center.cont-up#fileFormats
+            .h1-doc Common file formats
         .d-flex.align-items-center.cont-up
+            .flex-shrink-0.heading-cont
+                .h2-doc Mesh data formats
+            .flex-grow-1
+                ul 
+                    li
+                        a(href="https://nadirpatch.com/sphere2cube/" class="link-primary mt-3 mb-5" alt="web link to Nadirpatch page") GLTF/GLB
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Standard for web 3D models
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Small size
+                    li
+                        a(href="https://nadirpatch.com/sphere2cube/" class="link-primary mt-3 mb-5" alt="web link to Nadirpatch page") OBJ
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Standard for web 3D models
+                    li
+                        a(href="https://nadirpatch.com/sphere2cube/" class="link-primary mt-3 mb-5" alt="web link to Nadirpatch page") FBX
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Standard for web 3D models
+        .d-flex.align-items-center.cont-up
+            .flex-shrink-0.heading-cont
+                .h2-doc Point-cloud data formats
+            .flex-grow-1
+                ul 
+                    li
+                        a(href="https://en.wikipedia.org/wiki/ASCII" class="link-primary mt-3 mb-5" alt="web link to ASCII wikipedia page") ASCII
+                        ol (American Standard Code for Information Interchange)
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc XYZ, OBJ, PTX (Leica) and ASC. 
+                    li
+                        a(href="https://en.wikipedia.org/wiki/Binary_system" class="link-primary mt-3 mb-5" alt="web link to Binary system wikipedia page") Binary system
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc FLS (Faro), PCD (point cloud library), and LAS   
+                    li  
+                        a(href="https://www.interserver.net/tips/kb/what-is-the-difference-between-ascii-and-binary/" class="link-primary mt-3 mb-5" alt="web link to Binary versuASCII page") Both ASCII and Binary system
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc PLY, FBX. E57     
+        .d-flex.align-items-center.cont-up#photoStiching
             .h1-doc Photo stitching software
         .d-flex.align-items-center.cont-up
             .flex-shrink-0.heading-cont
@@ -208,7 +324,7 @@ block append content
                             .text-doc Not for mac
                     li
                         a(href="https://www.capturingreality.com/" class="link-primary mt-3 mb-5" alt="web link to Capturingreality page") Capturingreality
-        .d-flex.align-items-center.cont-up
+        .d-flex.align-items-center.cont-up#cameras
             .h1-doc Cameras
         .d-flex.align-items-center.cont-up
             .flex-shrink-0.heading-cont
@@ -227,11 +343,32 @@ block append content
                  ul 
                     li.bolder-text Carmin Virb 
                     ol.d-flex
-                        i(class="bi bi-dash")
-                        .text-doc no auto stitching
+                        i(class="bi bi-plus")
+                        .text-doc Auto stitching
                     li.bolder-text Matterport pro2
                     ol.d-flex
                         i(class="bi bi-plus")
-                        .text-docauto stitching
+                        .text-doc Auto stitching
+                    ol.d-flex
+                        i(class="bi bi-plus")
+                        .text-doc Really simple and fast to use
+                    ol.d-flex
+                        i(class="bi bi-plus")
+                        .text-doc Outcome is professional
+                    ol.d-flex
+                        i(class="bi bi-plus")
+                        .text-doc Automatic model and virtual tour generation
+                    ol.d-flex
+                        i(class="bi bi-dash")
+                        .text-doc Works only with the Matterport mobile app and Matterport account have to be created
+                    ol.d-flex
+                        i(class="bi bi-dash")
+                        .text-doc Matterport cameras are supported only with Matterport cloud professional plan
+                    ol.d-flex
+                        i(class="bi bi-dash")
+                        .text-doc Can't get hight quality 360-degree pictures out from their cloud
+                    ol.d-flex
+                        i(class="bi bi-dash")
+                        .text-doc Inside app purchaches for each virtual tour seperatly, even for the 3D model
 
     

@@ -1,0 +1,99 @@
+extends layout.pug
+block append head
+    title=  'Point-cloud to USDZ'
+block append content
+  .container 
+    .row 
+        .main-heading.mt-3.mb-0 Point-cloud to USDZ
+    .row 
+        .d-flex.flex-row-reverse
+            a(href="#info")
+                i(class="bi bi-info-circle-fill")   
+    .row 
+        iframe(
+            title='Point-cloud to USDZ', 
+            frameborder='0', 
+            allowfullscreen='', 
+            mozallowfullscreen='true', 
+            webkitallowfullscreen='true', 
+            allow='autoplay; fullscreen; xr-spatial-tracking', 
+            xr-spatial-tracking='', 
+            execution-while-out-of-viewport='', 
+            execution-while-not-rendered='', 
+            web-share='', 
+            width='960', 
+            height='540', 
+            src='https://sketchfab.com/models/e43ad02d54c54082a9657f727dedb874/embed'
+        )  
+    .d-flex.align-items-center.cont-up
+        .h1-doc#info Info
+    .d-flex.align-items-center.cont-up
+        .flex-shrink-0.heading-cont
+            .h2-doc Used
+        .flex-grow-1
+            ul 
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc TrueDepth 3D sensing technology that powers Face ID in the front-facing camera
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Ipad Pro 2020 that comes with TrueDepth 3D front camera
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Standard Cyborg Capture mobile app
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Skechfab for showing the USDZ format
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc (Ios XCode to convert USDZ file)
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc (Model-viewer and GLTF-viewer for testing the model on web browser)
+    .d-flex.align-items-center.cont-up
+        .flex-shrink-0.heading-cont
+            .h2-doc Working Process
+        .flex-grow-1
+            ul
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Scan taken with Ipad Pro 2020 front camera using Standard Cyborg Capture app
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc USDZ format scan uploaded to computer. Note, when uploaded to Standard Cyborg Capture app cloud, Only OBJ and PLY point-cloud data files are downloadable
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Because USDZ is an IOS standard file for models and AR, not all 3D players support this. USDZ can be opened on mac with XCode and exported as OBJ or DAE. Then imported to Blender and exported to GLB format. Also, USDZ can be converted in Maia with Babylonjs blugin for Maia. Also, there are some web file convertes that can convert USDZ files. Sketchfab supports USDZ files
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Notice that transferred data from Standard Cyborg Capture app in USDZ file format looks like point-cloud data, but when zoomed in, little mesh triangles show up
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc 1. USDZ file exported to DAE format in XCode. Opened Blender, selected shift A (to select all) and shift X (to delete default object). DAE format imported into Blender and exported to GLB. Opened Model-viewer editor and dragged GLB file into canvas, but noticed, that outcome is not good. Textures dissapear and triangle mesh data is not quite like original point-cloud data. Coudn't have much control over the light in Model-viewer editor
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc 2. Tested GLB model in GLTF-viewer and got better results with changing light settings
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc 3. USDZ file was uploaded to Sketchfab. Could add tone mapping to show colours and shades over the model
+    .d-flex.align-items-center.cont-up
+        .flex-shrink-0.heading-cont
+            .h2-doc Where to use
+        .flex-grow-1
+            ul
+                li.d-flex
+                    i(class="bi bi-lightbulb")
+                    .text-doc Use like avatar
+                li.d-flex
+                    i(class="bi bi-lightbulb")
+                    .text-doc Use in artworks
+    .d-flex.align-items-center.cont-up.mb-5
+        .flex-shrink-0.heading-cont
+            .h2-doc Webpages
+        .flex-grow-1
+            ul 
+                li
+                    a(href="https://www.standardcyborg.com" class="link-primary mt-3 mb-5" alt="web link to standard cyborg page") standardcyborg.com
+                li
+                    a(href="https://sketchfab.com" class="link-primary mt-3 mb-5" alt="web link to sketchfab page") sketchfab.com
+

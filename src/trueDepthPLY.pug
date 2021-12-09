@@ -1,0 +1,84 @@
+extends layout.pug
+block append head
+    title=  'Point-cloud PLY'
+block append content
+  .container 
+    .row 
+      .main-heading.mt-3.mb-0 Point-cloud PLY
+    .row 
+      .d-flex.flex-row-reverse
+        a(href="#info")
+          i(class="bi bi-info-circle-fill")   
+    .row 
+      iframe(
+        title='Point-cloud PLY', 
+        frameborder='0', 
+        allowfullscreen='', 
+        mozallowfullscreen='true', 
+        webkitallowfullscreen='true', 
+        allow='autoplay; fullscreen; xr-spatial-tracking', 
+        xr-spatial-tracking='', 
+        execution-while-out-of-viewport='', 
+        execution-while-not-rendered='', 
+        web-share='', 
+        width='960', 
+        height='540', 
+        src='https://sketchfab.com/models/5c417c526bcf4224bf4d4993b7f0afcf/embed'
+      )  
+    .d-flex.align-items-center.cont-up
+      .h1-doc#info Info
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Used
+      .flex-grow-1
+        ul 
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc TrueDepth 3D sensing technology that powers Face ID in the front-facing camera
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Ipad Pro 2020 that comes with TrueDepth 3D front camera
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Standard Cyborg Capture mobile app
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Skechfab for showing a PLY point-cloud data
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Working Process
+      .flex-grow-1
+        ul
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Scan taken with Ipad Pro 2020 front camera using Standard Cyborg Capture app
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Taken scan was saved and uploaded to Standard Cyborg Capture app cloud and PLY file downloaded to the computer
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Converted PLY to OBJ and GLB and tested in different online viewers, but these didn't support files without meshes
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Sketchfab supports PLY point-cloud data file
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Where to use
+      .flex-grow-1
+        ul
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc To keep in memory like pictures are kept and share with others
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc Use like avatar or make an AR business card
+    .d-flex.align-items-center.cont-up.mb-5
+      .flex-shrink-0.heading-cont
+        .h2-doc Webpages
+      .flex-grow-1
+        ul 
+          li
+            a(href="https://www.standardcyborg.com" class="link-primary mt-3 mb-5" alt="web link to standard cyborg page") standardcyborg.com
+          li
+            a(href="https://sketchfab.com" class="link-primary mt-3 mb-5" alt="web link to sketchfab page") sketchfab.com
+
