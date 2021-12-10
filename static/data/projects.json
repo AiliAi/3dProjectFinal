@@ -116,14 +116,14 @@
     {
       "title": "Media lab with Matterport",
       "type": ["tour", "vtour"],
-      "image": "thumbnails/photogrammetry.PNG",
+      "image": "thumbnails/Karamalmin-Studio-Dollhouse-View.jpg",
       "description": "Professional virtual tour, Generated with Matterport web-app",
       "link": "studioMP.html"
     },
     {
       "title": "Metareal virtual tour",
       "type": ["tour", "vtour"],
-      "image": "thumbnails/photogrammetry.PNG",
+      "image": "thumbnails/poster_metareal.jpg",
       "description": "Professional virtual tour, created with Metareal web-app",
       "link": "metareal.html"
     }
