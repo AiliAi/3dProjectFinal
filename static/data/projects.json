@@ -101,7 +101,7 @@
     },
     {
       "title": "Lidar tests",
-      "type": "model",
+      "type": ["model", "lidar"],
       "image": "thumbnails/MediaLab_Scaniverse.jpg",
       "description": "LiDAR scan, Created with Scaniverse mobile app",
       "link": "lidarTests.html"
