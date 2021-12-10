@@ -9,14 +9,14 @@
     },
     {
       "title": "Cupix tour",
-      "type": ["tour"],
+      "type": ["tour", "vtour"],
       "image": "thumbnails/cupixVirtualTour.PNG",
       "description": "Professional virtual tour, Generated with Cupix web-app",
       "link": "cupixVirtualTour.html"
     },
     {
       "title": "Matterport",
-      "type": ["tour"],
+      "type": ["tour", "vtour"],
       "image": "thumbnails/matterport.PNG",
       "description": "Professional virtual tour, Generated with Matterport web-app",
       "link": "matterport.html"
@@ -38,14 +38,14 @@
     },
     {
       "title": "Pannellum",
-      "type": ["tour"],
+      "type": ["tour", "panorama"],
       "image": "thumbnails/pannellum.PNG",
       "description": "Lightweight virtual tour, Created with Pannellum panorama viewer library",
       "link": "pannellum.html"
     },
     {
       "title": "Roundme",
-      "type": ["tour"],
+      "type": ["tour", "panorama"],
       "image": "thumbnails/roundme.PNG",
       "description": "Lightweight virtual tour, Created with Roundme web-app",
       "link": "roundme.html"
@@ -87,14 +87,14 @@
     },
     {
       "title": "Media lab virtual tour",
-      "type": ["tour"],
+      "type": ["tour", "vtour"],
       "image": "thumbnails/photogrammetry.PNG",
       "description": "Media lab tour",
       "link": "studioMP.html"
     },
     {
       "title": "Metareal virtual tour",
-      "type": ["tour"],
+      "type": ["tour", "vtour"],
       "image": "thumbnails/photogrammetry.PNG",
       "description": "Professional virtual tour, created with Metareal web-app",
       "link": "metareal.html"

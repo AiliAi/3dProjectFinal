@@ -11,7 +11,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: light;
   scroll-behavior: smooth;
-
 }
 
 p {
@@ -50,8 +49,27 @@ h5 {
   border: 1px solid $blue;
   color: $blue;
   &:hover {
-    background-color: $blue;
-    color: white;
+    background-color: $hover;
+    color: black;
+  }
+}
+
+.blue-btn-active {
+  background-color: $blue;
+  color: white;
+}
+
+.magenta-btn {
+  background-color: $magenta;
+  border: 1px solid $magenta;
+}
+
+.magenta-outline {
+  border: 1px solid $magenta;
+  color: $magenta;
+  &:hover {
+    background-color: $hover;
+    color: black;
   }
 }
 
@@ -113,7 +131,7 @@ ul {
 
 /*FRONT PAGE*/
 
-#info-container {
+#about {
   p {
     font-size: $textSize;
   }
@@ -137,8 +155,14 @@ ul {
     font-size: 4em;
   }
 
-  #left h2 {
-    color: black;
+  #left {
+    h2 {
+      color: black;
+    }
+    .bi.bi-plus,
+    .bi.bi-dash {
+      color: $magenta;
+    }
   }
 
   #right,
@@ -154,8 +178,9 @@ ul {
     h2 {
       color: white;
     }
-
-    .bi.bi-plus, .bi.bi-dash {
+    
+    .bi.bi-plus,
+    .bi.bi-dash {
       color: black;
     }
   }
