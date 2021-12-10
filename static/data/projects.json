@@ -114,10 +114,10 @@
       "link": "threeTest.html"
     },
     {
-      "title": "Media lab virtual tour",
+      "title": "Media lab with Matterport",
       "type": ["tour", "vtour"],
       "image": "thumbnails/photogrammetry.PNG",
-      "description": "Media lab tour",
+      "description": "Professional virtual tour, Generated with Matterport web-app",
       "link": "studioMP.html"
     },
     {
