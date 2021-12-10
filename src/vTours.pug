@@ -7,4 +7,10 @@ block append content
     .row
       .col
         .h1.mt-3.mb-0.mx-3.main-heading Virtual Tours
-    .row.row-cols-1.row-cols-lg-2.g-4.cards-container.mb-5
+    .row
+      .col.mx-3.mt-3
+       .btn-group.btn-group-sm(role='group', aria-label='Basic example')
+          a#tours-btn.btn.blue-outline.blue-btn-active(type='button') All
+          a#virtual-tours-btn.btn.blue-outline(type='button') Virtual tours
+          a#panoramas-btn.btn.blue-outline(type='button') Panoramas
+    .row.row-cols-1.row-cols-lg-2.cards-container.mb-5

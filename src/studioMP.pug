@@ -20,37 +20,7 @@ block append content
               .modal-header
                 h5#studio-guide-modal-label.modal-title Lights usage instructions
                 button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-              .modal-body
-                #studio-guide-carousel.carousel.slide(data-bs-ride='carousel')
-                  .carousel-indicators
-                    button.active(type='button' data-bs-target='#studio-guide-carousel' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
-                    button(type='button' data-bs-target='#studio-guide-carousel' data-bs-slide-to='1' aria-label='Slide 2')
-                    button(type='button' data-bs-target='#studio-guide-carousel' data-bs-slide-to='2' aria-label='Slide 3')
-                    button(type='button' data-bs-target='#studio-guide-carousel' data-bs-slide-to='3' aria-label='Slide 4')
-                    button(type='button' data-bs-target='#studio-guide-carousel' data-bs-slide-to='4' aria-label='Slide 5')
-                    button(type='button' data-bs-target='#studio-guide-carousel' data-bs-slide-to='5' aria-label='Slide 6')
-                    button(type='button' data-bs-target='#studio-guide-carousel' data-bs-slide-to='6' aria-label='Slide 7')
-                  .carousel-inner
-                    .carousel-item.active
-                      img.d-block.w-100(src='/guide/first.jpg' alt='first slide')
-                    .carousel-item
-                      img.d-block.w-100(src='/guide/second.jpg' alt='second slide')
-                    .carousel-item
-                      img.d-block.w-100(src='/guide/third.jpg' alt='third slide')
-                    .carousel-item
-                      img.d-block.w-100(src='/guide/fourth.jpg' alt='fourth slide')
-                    .carousel-item
-                      img.d-block.w-100(src='/guide/fifth.jpg' alt='fifth slide')
-                    .carousel-item
-                      img.d-block.w-100(src='/guide/sixth.jpg' alt='sixth slide')
-                    .carousel-item
-                      img.d-block.w-100(src='/guide/seventh.jpg' alt='seventh slide')
-                  button.carousel-control-prev(type='button' data-bs-target='#studio-guide-carousel' data-bs-slide='prev')
-                    span.carousel-control-prev-icon(aria-hidden='true')
-                    span.visually-hidden Previous
-                  button.carousel-control-next(type='button' data-bs-target='#studio-guide-carousel' data-bs-slide='next')
-                    span.carousel-control-next-icon(aria-hidden='true')
-                    span.visually-hidden Next
+              .modal-body#studio-guide-carousel-container
               .modal-footer
     .row.mb-5
       iframe(
