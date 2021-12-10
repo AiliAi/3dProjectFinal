@@ -1,0 +1,76 @@
+extends layout.pug
+block append head
+    title=  'Point-cloud to USDZ'
+block append content
+  .container 
+    .row 
+        .main-heading.mt-3.mb-0 Piece of graffiti
+    .row 
+        .d-flex.flex-row-reverse
+            a(href="#info")
+                i(
+                    class="bi bi-info-circle-fill"
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="bottom" 
+                    title="info"
+                )     
+    .row 
+        iframe(
+            width="960"
+             height="540" 
+             frameborder="0" 
+             src="https://poly.cam/capture/6AE6794F-1FFC-463A-A39A-5903AD5E1081"   
+        ) 
+        .h1-doc#info Info
+    .d-flex.align-items-center.cont-up
+        .flex-shrink-0.heading-cont
+            .h2-doc Used
+        .flex-grow-1
+            ul 
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Lidar scan
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Ipad Pro 2020 that comes with Lidar technology 
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Polycam Lidar scanner app for Ipad 
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Skechfab for showing the USDZ format
+    .d-flex.align-items-center.cont-up
+        .flex-shrink-0.heading-cont
+            .h2-doc Working Process
+        .flex-grow-1
+            ul
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc The model was scanned with Polycam Lidar scanner app for Ipad
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Scan was uploaded to Polycam cloud
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Iframe link added to the website
+    .d-flex.align-items-center.cont-up
+        .flex-shrink-0.heading-cont
+            .h2-doc Where to use
+        .flex-grow-1
+            ul
+                li.d-flex
+                    i(class="bi bi-lightbulb")
+                    .text-doc To keep in memory like pictures are kept and share with others
+                li.d-flex
+                    i(class="bi bi-lightbulb")
+                    .text-doc Use in artworks or game graphics
+    .d-flex.align-items-center.cont-up.mb-5
+        .flex-shrink-0.heading-cont
+            .h2-doc Webpages
+        .flex-grow-1
+            ul 
+                li
+                    a(href="https://poly.cam/" class="link-primary mt-3 mb-5" alt="web link to standard polycam page") poly.cam
+                li
+                    a(href="https://poly.cam/capture/C90B337A-3D5A-4FBE-AA78-D90D6001DE2B" class="link-primary mt-3 mb-5" alt="web link to polycam page bigger graffiti") look whole graffiti
+

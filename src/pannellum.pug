@@ -9,8 +9,12 @@ block append content
       .main-heading.mt-3.mb-0 Pannellum
     .row
       .d-flex.flex-row-reverse
-        a(href="#info")
-          i(class="bi bi-info-circle-fill")   
+        i(
+          class="bi bi-info-circle-fill"
+          data-bs-toggle="tooltip" 
+          data-bs-placement="bottom" 
+          title="info"
+        )  
     .row
       #panorama.p-0(style='height: 480px')
     .d-flex.align-items-center.cont-up

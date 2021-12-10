@@ -8,12 +8,17 @@ block append content
     .row 
         .d-flex.flex-row-reverse
             a(href="#info")
-                i(class="bi bi-info-circle-fill")   
+                i(
+                    class="bi bi-info-circle-fill"
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="bottom" 
+                    title="info"
+          )  
     .row.d-flex.flex-column.flex-lg-row
         .col#pic1.d-flex.flex-column-reverse
-            p.fst-italic.text-center Picture 1: taken with Standard Cyborg Capture app
+            p.fst-italic.text-left.text-md-center Picture 1: taken with Standard Cyborg Capture app
         .col#pic2.d-flex.flex-column-reverse
-            p.fst-italic.text-center Picture 2: taken with EM3D app
+            p.fst-italic.text-left.text-md-center Picture 2: taken with EM3D app
     .d-flex.align-items-center.cont-up
         .h1-doc#info Info
     .d-flex.align-items-center.cont-up
@@ -71,6 +76,9 @@ block append content
                 li.d-flex
                     i(class="bi bi-arrow-right")
                     .text-doc Tested EM3D mobile app that is similat to Standard Cyborg Capture mobile app, but point-cloud data is converted into mesh data automatically inside their mobile app. I was not possible to export file from their app without paying for it
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Iframe link added to the website
     .d-flex.align-items-center.cont-up
         .flex-shrink-0.heading-cont
             .h2-doc Where to use

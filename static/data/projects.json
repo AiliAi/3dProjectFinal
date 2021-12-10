@@ -25,7 +25,7 @@
       "title": "Three.js",
       "type": ["model", "photogrammetry"],
       "image": "thumbnails/Q_Unicorn.jpg",
-      "description": "Photogrammetry, 3D model viewer with Three.js library",
+      "description": "Photogrammetry, 3D model with Three.js library",
       "link": "qloneModel.html"
     },
     {
@@ -79,6 +79,13 @@
       "link": "studioLidar.html"
     },
     {
+      "title": "Piece of graffiti",
+      "type": ["model", "lidar"],
+      "image": "thumbnails/poster_graffiti.jpg",
+      "description": "LiDAR scan, Created with Polycam mobile app and used Polycam viewer",
+      "link": "graffiti.html"
+    },
+    {
       "title": "Point-cloud PLY",
       "type": ["model", "lidar"],
       "image": "thumbnails/poster_face.jpg",
@@ -102,15 +109,15 @@
     {
       "title": "Lidar tests",
       "type": ["model", "lidar"],
-      "image": "thumbnails/MediaLab_Scaniverse.jpg",
-      "description": "LiDAR scan, Created with Scaniverse mobile app",
+      "image": "thumbnails/poster_turtle.jpg",
+      "description": "LiDAR scans, Tested different lidar scanner mobile apps",
       "link": "lidarTests.html"
     },
     {
       "title": "Photogrammetry test",
       "type": ["model", "photogrammetry"],
       "image": "thumbnails/photogrammetry.PNG",
-      "description": "Photogrammetry, Testing Three.js library and Meshroom picture stitcher",
+      "description": "Photogrammetry, Tested Three.js library and Meshroom picture stitcher",
       "link": "threeTest.html"
     },
     {

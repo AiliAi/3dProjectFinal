@@ -7,8 +7,12 @@ block append content
       .main-heading.mt-3.mb-0 Roundme
     .row 
       .d-flex.flex-row-reverse
-        a(href="#info")
-          i(class="bi bi-info-circle-fill")  
+        i(
+          class="bi bi-info-circle-fill"
+          data-bs-toggle="tooltip" 
+          data-bs-placement="bottom" 
+          title="info"
+        )  
     .row
         iframe(
             width='960' 

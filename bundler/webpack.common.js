@@ -28,7 +28,8 @@ module.exports = {
         lidarTests: path.resolve(__dirname, '../src/js/lidarTests.js'),
         trueDepthPLY: path.resolve(__dirname, '../src/js/trueDepthPLY.js'),
         trueDepthUSDZ: path.resolve(__dirname, '../src/js/trueDepthUSDZ.js'),
-        trueDepthMesh: path.resolve(__dirname, '../src/js/trueDepthMesh.js')
+        trueDepthMesh: path.resolve(__dirname, '../src/js/trueDepthMesh.js'),
+        graffiti: path.resolve(__dirname, '../src/js/graffiti.js')
     },
     output:
     {
@@ -267,6 +268,16 @@ module.exports = {
                 chunks: ['trueDepthMesh'],
                 inject: true,
                 filename: 'trueDepthMesh.html',
+                minify: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, '../src/graffiti.pug'),
+                chunks: ['graffiti'],
+                inject: true,
+                filename: 'graffiti.html',
                 minify: {
                     removeComments: true,
                     collapseWhitespace: true

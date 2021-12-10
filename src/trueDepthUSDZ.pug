@@ -8,7 +8,12 @@ block append content
     .row 
         .d-flex.flex-row-reverse
             a(href="#info")
-                i(class="bi bi-info-circle-fill")   
+                i(
+                    class="bi bi-info-circle-fill"
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="bottom" 
+                    title="info"
+                )    
     .row 
         iframe(
             title='Point-cloud to USDZ', 
@@ -76,6 +81,9 @@ block append content
                 li.d-flex
                     i(class="bi bi-arrow-right")
                     .text-doc 3. USDZ file was uploaded to Sketchfab. Could add tone mapping to show colours and shades over the model
+                li.d-flex
+                    i(class="bi bi-arrow-right")
+                    .text-doc Iframe link added to the website
     .d-flex.align-items-center.cont-up
         .flex-shrink-0.heading-cont
             .h2-doc Where to use
