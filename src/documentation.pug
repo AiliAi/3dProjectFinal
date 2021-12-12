@@ -1,55 +1,188 @@
 extends layout.pug
 block append head
     title=  'Home'
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
 block append content
     div(class="loading-bar")
     div(id="container")  
-    .container.mb-5
+    .container.mb-5#doc-info
         .row 
             .h1.mt-3.mb-0.mx-3.main-heading  Documentation
-        .d-flex.align-items-center.cont-up#technologies
-            .h1-doc Technologies
+        .d-flex.align-items-center.cont-up#appsForMobile
+            .h1-doc Apps for mobile
         .d-flex.align-items-center.cont-up
             .flex-shrink-0.heading-cont
                 .h2-doc Photogrammetry
             .flex-grow-1
                 ul 
                     li
-                        a(href="https://homes.cupix.com/" class="link-primary mt-3 mb-5" alt="web link to Cupix page") Cupix
+                        a(href="https://www.qlone.pro" class="link-primary mt-3 mb-5" alt="web link to Qlone page") Qlone
                         ol.d-flex
                             i(class="bi bi-plus")
-                            .text-doc Can generate 3D models, alternative to matterport
+                            .text-doc Mobile app for Android/ios for free with limits
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Can make good looking 3D models around and under
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Can generate animations and has AR functionality
+                        ol.d-flex
+                            i(class="bi bi-dash")
+                            .text-doc Needs right size printed Qlone mat under the object
+                    li
+                        a(href="https://lvonasek.github.io" class="link-primary mt-3 mb-5" alt="web link to Qlone page") 3D Live Scanner
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Mobile app for Android for free with advertisments, early access
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Quite promising application, result depends of the phone camera features. Can get better results if a phone has a ToF sensor
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc VR view
         .d-flex.align-items-center.cont-up
             .flex-shrink-0.heading-cont
                 .h2-doc LiDAR
             .flex-grow-1
                 ul 
                     li
-                        a(href="https://homes.cupix.com/" class="link-primary mt-3 mb-5" alt="web link to Cupix page") Cupix
+                        a(href="https://scaniverse.com" class="link-primary mt-3 mb-5" alt="web link to Scaniverse page") Scaniverse
                         ol.d-flex
                             i(class="bi bi-plus")
-                            .text-doc Can generate 3D models, alternative to matterport
+                            .text-doc Mobile scanner app for IOS, free
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc AR view
+                        ol.d-flex
+                            i(class="bi bi-plus-slash-minus")
+                            .text-doc Can scan little details, but not complitley
+                    li
+                        a(href="https://3dscannerapp.com" class="link-primary mt-3 mb-5" alt="web link to 3D Scanner App page") 3D Scanner App
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Mobile scanner app for IOS, free with limits
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Can get good results with bigger objects
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Good inside app editor for trimming the model
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc AR view
+                    li
+                        a(href="https://sitescape-test.webflow.io" class="link-primary mt-3 mb-5" alt="web link to 3D Sitescape page") Sitescape
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Mobile scan app for IOS free with limits
+                        ol.d-flex
+                            i(class="bi bi-plus-slash-minus")
+                            .text-doc Big files and very slow, but can choose quality and point-size to minimize the file size
+                        ol.d-flex
+                            i(class="bi bi-dash")
+                            .text-doc Point-cloud data only
+        .d-flex.align-items-center.cont-up
+            .flex-shrink-0.heading-cont
+                .h2-doc Both Photogrammetry and LiDAR
+            .flex-grow-1
+                ul 
+                    li
+                        a(href="https://poly.cam/" class="link-primary mt-3 mb-5" alt="web link to Polycam page") Polycam
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Mobile app for IOS for free with limits
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Very good LiDAR scan results with big objects
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Cuts out small elements on Lidar scans, good, when don't want "noise" on the scan
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Can get good results with photogrammetry when photsos taken around the object, good for AR
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Can continue scan later by extending it
+                        ol.d-flex
+                            i(class="bi bi-dash")
+                            .text-doc Result can be unexpexted, when trying to have a wholesome model, around and down parts
+                    li
+                        a(href="https://metascan.ai" class="link-primary mt-3 mb-5" alt="web link to 3D Metascan page") Metascan
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Mobile scan app for IOS free with limits
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Can capture smaller details, but not very clearly
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Good inside app trimming editor for liDAR scan
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Good results with photogrammetry, but more suitable for AR
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc AR view
         .d-flex.align-items-center.cont-up
             .flex-shrink-0.heading-cont
                 .h2-doc TrueDepth
             .flex-grow-1
                 ul 
                     li
-                        a(href="https://homes.cupix.com/" class="link-primary mt-3 mb-5" alt="web link to Cupix page") Cupix
+                        a(href="https://www.standardcyborg.com" class="link-primary mt-3 mb-5" alt="web link to Capture app page") Capture: 3D Scan Anything
                         ol.d-flex
                             i(class="bi bi-plus")
-                            .text-doc Can generate 3D models, alternative to matterport
+                            .text-doc Mobile app for IOS, free
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Very good results with small and detailed objects
+                        ol.d-flex
+                            i(class="bi bi-plus-slash-minus")
+                            .text-doc Exports point-cloud data
+                        ol.d-flex
+                            i(class="bi bi-dash")
+                            .text-doc USDZ file data comes without colors/textures
+                        ol.d-flex
+                            i(class="bi bi-dash")
+                            .text-doc Hard to scan objects with only front camera
+                        ol.d-flex
+                            i(class="bi bi-dash")
+                            .text-doc AR view, but not very useful
+                    li
+                        a(href="https://em3dscanningapp.com/contact/" class="link-primary mt-3 mb-5" alt="web link to EM3D app page") EM3D: Ethan Makes 3D Scanner
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Mobile app for IOS, free with limits
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Good results with small and detailed objects
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Generates point-cloud data automatically into mesh data
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Can export different file types
+                        ol.d-flex
+                            i(class="bi bi-plus-slash-minus")
+                            .text-doc Hard to scan objects with only front camera, but have a solution for that. Use their EM3D: Mirror Saver app with a second phone as a second screen and scan objects by hold the devices back to back and see what you're scanning
         .d-flex.align-items-center.cont-up
             .flex-shrink-0.heading-cont
                 .h2-doc Augumented Reality
             .flex-grow-1
                 ul 
                     li
-                        a(href="https://homes.cupix.com/" class="link-primary mt-3 mb-5" alt="web link to Cupix page") Cupix
+                        a(href="https://mywebar.com" class="link-primary mt-3 mb-5" alt="web link to MyWebAr page") MyWebAr
                         ol.d-flex
                             i(class="bi bi-plus")
-                            .text-doc Can generate 3D models, alternative to matterport
+                            .text-doc Web-app, free with limits
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Easy interface to use 3D models to create AR content with QR code
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Comes with ready to use templates
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Has easy to follow tutorials
         .d-flex.align-items-center.cont-up#fileFormats
             .h1-doc Common file formats
         .d-flex.align-items-center.cont-up
@@ -58,44 +191,89 @@ block append content
             .flex-grow-1
                 ul 
                     li
-                        a(href="https://nadirpatch.com/sphere2cube/" class="link-primary mt-3 mb-5" alt="web link to Nadirpatch page") GLTF/GLB
+                        a(href="https://docs.fileformat.com/3d/gltf/" class="link-primary mt-3 mb-5" alt="web link to glTF file format page") glTB
                         ol.d-flex
                             i(class="bi bi-plus")
-                            .text-doc Standard for web 3D models
+                            .text-doc Open 3D format for the web (JSON/ASCII)
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Standard for the web 3D models
                         ol.d-flex
                             i(class="bi bi-plus")
                             .text-doc Small size
                     li
-                        a(href="https://nadirpatch.com/sphere2cube/" class="link-primary mt-3 mb-5" alt="web link to Nadirpatch page") OBJ
+                        a(href="https://docs.fileformat.com/3d/glb/" class="link-primary mt-3 mb-5" alt="web link to glTF file format page") GLB
                         ol.d-flex
                             i(class="bi bi-plus")
-                            .text-doc Standard for web 3D models
+                            .text-doc Open 3D format for the web (binary glTF)
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Standard for the web 3D models
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Small size
                     li
-                        a(href="https://nadirpatch.com/sphere2cube/" class="link-primary mt-3 mb-5" alt="web link to Nadirpatch page") FBX
+                        a(href="https://docs.fileformat.com/3d/usdz/" class="link-primary mt-3 mb-5" alt="web link to USD file format page") USDZ
                         ol.d-flex
                             i(class="bi bi-plus")
-                            .text-doc Standard for web 3D models
+                            .text-doc Best for Arkit and sharing to iphones
+                    li
+                        a(href="https://en.wikipedia.org/wiki/STL_(file_format)" class="link-primary mt-3 mb-5" alt="web link to stl format wikipedia page") STL
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Un-textured file used in 3D printing
         .d-flex.align-items-center.cont-up
             .flex-shrink-0.heading-cont
                 .h2-doc Point-cloud data formats
             .flex-grow-1
                 ul 
                     li
-                        a(href="https://en.wikipedia.org/wiki/ASCII" class="link-primary mt-3 mb-5" alt="web link to ASCII wikipedia page") ASCII
-                        ol (American Standard Code for Information Interchange)
+                        a(href="https://en.wikipedia.org/wiki/XYZ_file_format" class="link-primary mt-3 mb-5" alt="web link to XYZ format wikipedia page") XYZ
                         ol.d-flex
                             i(class="bi bi-plus")
-                            .text-doc XYZ, OBJ, PTX (Leica) and ASC. 
+                            .text-doc Chemical file format
                     li
-                        a(href="https://en.wikipedia.org/wiki/Binary_system" class="link-primary mt-3 mb-5" alt="web link to Binary system wikipedia page") Binary system
+                        a(href="https://en.wikipedia.org/wiki/LAS_file_format" class="link-primary mt-3 mb-5" alt="web link to LAS format wikipedia page") LAS
                         ol.d-flex
                             i(class="bi bi-plus")
-                            .text-doc FLS (Faro), PCD (point cloud library), and LAS   
+                            .text-doc Georeferenced color point-cloud, designed for the interchange and archiving of lidar point cloud data
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Open binary format
                     li  
-                        a(href="https://www.interserver.net/tips/kb/what-is-the-difference-between-ascii-and-binary/" class="link-primary mt-3 mb-5" alt="web link to Binary versuASCII page") Both ASCII and Binary system
+                        a(href="https://docs.fileformat.com/3d/e57/" class="link-primary mt-3 mb-5" alt="web link to E57 file format page") E57
                         ol.d-flex
                             i(class="bi bi-plus")
-                            .text-doc PLY, FBX. E57    
+                            .text-doc Vendor-neutral file format that is used for storing and exchange of three-dimensional imaging data   
+        .d-flex.align-items-center.cont-up
+            .flex-shrink-0.heading-cont
+                .h2-doc Both Mesh and Point-cloud data formats
+            .flex-grow-1
+                ul 
+                    li
+                        a(href="https://docs.fileformat.com/3d/ply/" class="link-primary mt-3 mb-5" alt="web link to PLY file format page") PLY
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc High-density color point-cloud 
+                    li
+                        a(href="https://docs.fileformat.com/3d/obj/" class="link-primary mt-3 mb-5" alt="web link to object format file foramt page") OBJ
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Text-based 3D model format
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc well suported
+                        ol.d-flex
+                            i(class="bi bi-dash")
+                            .text-doc Large file size
+                    li
+                        a(href="https://docs.fileformat.com/3d/fbx/" class="link-primary mt-3 mb-5" alt="web link FBX file format page") FBX
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Supported by most software and game engines
+                        ol.d-flex
+                            i(class="bi bi-dash")
+                            .text-doc Large file size
         .d-flex.align-items-center.cont-up#modelViewers
             .h1-doc Model viewers
         .d-flex.align-items-center.cont-up
@@ -169,11 +347,26 @@ block append content
                         a(href="https://gltf-viewer.donmccurdy.com" class="link-primary mt-3 mb-5" alt="web link to Gltf-viewer page") Gltf-viewer
                         ol.d-flex
                             i(class="bi bi-plus")
-                            .text-doc Have also git reprosity 
+                            .text-doc With git reprosity 
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Has lot of control parameters for testing
+                        ol.d-flex
+                            i(class="bi bi-dash")
+                            .text-doc Accepts only glTF/GLB file format
                     li
                         a(href="https://www.3dviewer.net/index.html" class="link-primary mt-3 mb-5" alt="web link to 3dviewer page") 3dviewer
+                        ol.d-flex
+                            i(class="bi bi-plus")
+                            .text-doc Accepts lot of formats
                     li
                         a(href="https://modelviewer.dev/editor/" class="link-primary mt-3 mb-5" alt="web link to Model-viewer editor page") Model-viewer editor
+                        ol.d-flex
+                            i(class="bi bi-plus-slash-minus")
+                            .text-doc More useful for a quick view
+                        ol.d-flex
+                            i(class="bi bi-dash")
+                            .text-doc Accepts only glTF/GLB file format
         .d-flex.align-items-center.cont-up
             .flex-shrink-0.heading-cont
                 .h2-doc 3D model viewer apps/file converters
@@ -249,7 +442,10 @@ block append content
                             .text-doc Can ceate 3D models from depthmaps, alternative to matterport
                         ol.d-flex 
                             i(class="bi bi-dash")
-                            .text-doc Hard to use
+                            .text-doc Hard to use, have to learn how to use their we-app first
+                        ol.d-flex 
+                            i(class="bi bi-dash")
+                            .text-doc Not very automatic
                     li
                         a(href="https://matterport.com" class="link-primary mt-3 mb-5" alt="web link to Matterport page") Matterport
                         ol.d-flex 
@@ -316,7 +512,7 @@ block append content
                             |  plugin with blender to create 3D models from equirectangular panoramas (makes Obj file).
                         ol.d-flex
                             i(class="bi bi-dash")
-                            .text-doc Hard to use
+                            .text-doc Have to understand their code and have some coding skills, if want to do something more difficult than panorama viewer
         .d-flex.align-items-center.cont-up#converters
             .h1-doc Converters
         .d-flex.align-items-center.cont-up
@@ -371,8 +567,8 @@ block append content
                             i(class="bi bi-plus")
                             .text-doc Free 
                         ol.d-flex
-                            i(class="bi bi-plus")
-                            .text-doc Hard to use
+                            i(class="bi bi-dash")
+                            .text-doc Hard to use, needs more deeper understanding of photography
         .d-flex.align-items-center.cont-up
             .flex-shrink-0.heading-cont
                 .h2-doc Model stitching apps

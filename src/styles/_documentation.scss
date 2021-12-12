@@ -43,7 +43,12 @@
     padding-bottom: 0.8em;
 }
 
-.bi.bi-plus, .bi.bi-dash, .bi.bi-arrow-right, .bi.bi-lightbulb, .bi.bi-lightbulb-fill {
+.bi.bi-plus, 
+.bi.bi-dash, 
+.bi.bi-arrow-right, 
+.bi.bi-lightbulb, 
+.bi.bi-lightbulb-fill, 
+.bi.bi-plus-slash-minus {
  font-size: 1.2em;
  padding-right: 0.5em;
  margin-top: -0.1em;
@@ -84,4 +89,35 @@
 .compare-img {
     display: block;
     width: 100%;
+}
+
+@include media-breakpoint-down(xs) { 
+    #doc-info {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+     
+    .main-heading {
+        font-size: 2.2em !important;
+      }
+    
+    .h1-doc {
+        font-size: 2em;
+        margin-left: -0.2em !important;
+    }
+
+    .h2-doc {
+        font-size: 1.6em;
+        margin-left: -0.2em !important;
+    }
+
+    ul, li {
+        margin-left: 0;
+        padding-left: 0.4em;
+    }
+
+    ol {
+        margin-left: 0;
+        padding-left: 0.4em;
+    }
 }
