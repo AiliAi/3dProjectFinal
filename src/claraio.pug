@@ -1,0 +1,95 @@
+extends layout.pug
+block append head
+    title=  'Clara.io'
+block append content
+  .container 
+    .row 
+      .main-heading.mt-3.mb-0 Clara.io
+    .row 
+      .d-flex.flex-row-reverse
+        a(href="#info")
+          i(
+            class="bi bi-info-circle-fill"
+            data-bs-toggle="tooltip" 
+            data-bs-placement="bottom" 
+            title="info"
+          )  
+    .row 
+        iframe(
+            title='Toy Bunnies', 
+            src="https://clara.io/embed/aec7ff3b-44f2-4636-a698-88cd62337bbb?renderer=webgl" 
+            width="960" 
+            height="540" 
+            allowfullscreen
+        )
+    p.fst-italic.text-left.text-md-center Note: Clara.io viewer works better 
+        a(href="https://clara.io/view/aec7ff3b-44f2-4636-a698-88cd62337bbb" class="link-primary mt-3 mb-5" alt="web link to clara.io page") on their site
+    .d-flex.align-items-center.cont-up
+      .h1-doc#info Info
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Used
+      .flex-grow-1
+        ul 
+            li.d-flex
+                i(class="bi bi-arrow-right")
+                .text-doc Photogrammetry
+            li.d-flex
+                i(class="bi bi-arrow-right")
+                .text-doc Left: Qlone mobile app for Android/ios free with limits
+            li.d-flex
+                i(class="bi bi-arrow-right")
+                .text-doc Middle: 3D Live Scanner (early access) for Android free with advertisements
+            li.d-flex
+                i(class="bi bi-arrow-right")
+                .text-doc Right: Metascan for ios (also lidar scan possibility) free with limits
+            li.d-flex
+                i(class="bi bi-arrow-right")
+                .text-doc Printed out Qlone mat, size A3
+            li.d-flex
+                i(class="bi bi-arrow-right")
+                .text-doc Clara.io web-app with free plan
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Working Process
+      .flex-grow-1
+        ul
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc A 3D toy bunny figure made using photogrammetry with 3 different mobile applications for comparacion
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc GLB files sent to the computer. For Qlone model, needed to download OBJ file and covert it to GLB in Blender, because Clara.io gave error for Qlone model if downloaded from the app in GLB format
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Uploaded one model to Clara.io, opened their editor and imported other models into scene
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Made some adjustment in Clara.io editor. Their editor is really advanced, but can be a bit confusing at first
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Iframe link added to the website.
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Where to use
+      .flex-grow-1
+        ul
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc Online stores to present the product and give a better idea of the product.
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc Share your 3D scanned objects
+    .d-flex.align-items-center.cont-up.mb-5
+      .flex-shrink-0.heading-cont
+        .h2-doc Webpages
+      .flex-grow-1
+        ul 
+          li
+            a(href="https://www.qlone.pro" class="link-primary mt-3 mb-5" alt="web link to qlone page") qlone.pro
+          li
+            a(href="https://lvonasek.github.io" class="link-primary mt-3 mb-5" alt="web link to lvonasek.github.io page") 3D Live Scanner
+          li
+            a(href="https://metascan.ai" class="link-primary mt-3 mb-5" alt="web link to metascan page") metascan.ai
+          li
+            a(href="https://clara.io" class="link-primary mt-3 mb-5" alt="web link to clara.io page") Clara.io

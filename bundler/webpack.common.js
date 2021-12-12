@@ -29,7 +29,8 @@ module.exports = {
         trueDepthPLY: path.resolve(__dirname, '../src/js/trueDepthPLY.js'),
         trueDepthUSDZ: path.resolve(__dirname, '../src/js/trueDepthUSDZ.js'),
         trueDepthMesh: path.resolve(__dirname, '../src/js/trueDepthMesh.js'),
-        graffiti: path.resolve(__dirname, '../src/js/graffiti.js')
+        graffiti: path.resolve(__dirname, '../src/js/graffiti.js'),
+        claraio: path.resolve(__dirname, '../src/js/claraio.js')
     },
     output:
     {
@@ -278,6 +279,16 @@ module.exports = {
                 chunks: ['graffiti'],
                 inject: true,
                 filename: 'graffiti.html',
+                minify: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                },
+            }),
+            new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, '../src/claraio.pug'),
+                chunks: ['claraio'],
+                inject: true,
+                filename: 'claraio.html',
                 minify: {
                     removeComments: true,
                     collapseWhitespace: true

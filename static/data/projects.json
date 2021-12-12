@@ -1,13 +1,6 @@
 {
   "projects": [
     {
-      "title": "Cupix model",
-      "type": ["model", "photogrammetry"],
-      "image": "thumbnails/cupixModel.PNG",
-      "description": "Photogrammetry, 3D model of classroom generated with Cupix web-app",
-      "link": "cupixModel.html"
-    },
-    {
       "title": "Cupix tour",
       "type": ["tour", "vtour"],
       "image": "thumbnails/cupixVirtualTour.PNG",
@@ -51,6 +44,13 @@
       "link": "roundme.html"
     },
     {
+      "title": "Clara.io",
+      "type": ["model", "photogrammetry"],
+      "image": "thumbnails/poster_claraio.jpg",
+      "description": "Photogrammetry, 3D model viewer and advanced editor with Clara.io web-app",
+      "link": "claraio.html"
+    },
+    {
       "title": "Model-viewer + AR",
       "type": ["model", "photogrammetry"],
       "image": "thumbnails/poster_Elephant.jpg",
@@ -72,6 +72,13 @@
       "link": "mixerGuide.html"
     },
     {
+      "title": "Cupix model",
+      "type": ["model", "photogrammetry"],
+      "image": "thumbnails/cupixModel.PNG",
+      "description": "Photogrammetry, 3D model of classroom generated with Cupix web-app",
+      "link": "cupixModel.html"
+    },
+    {
       "title": "Media lab with Scaniverse",
       "type": ["model", "lidar"],
       "image": "thumbnails/MediaLab_Scaniverse.jpg",
@@ -84,6 +91,13 @@
       "image": "thumbnails/poster_graffiti.jpg",
       "description": "LiDAR scan, Created with Polycam mobile app and used Polycam viewer",
       "link": "graffiti.html"
+    },
+    {
+      "title": "Lidar tests",
+      "type": ["model", "lidar"],
+      "image": "thumbnails/poster_turtle.jpg",
+      "description": "LiDAR scans, Tested different lidar scanner mobile apps",
+      "link": "lidarTests.html"
     },
     {
       "title": "Point-cloud PLY",
@@ -105,13 +119,6 @@
       "image": "thumbnails/poster_meshlab.jpg",
       "description": "TrueDepth 3D camera, Created with Standard Cyborg Capture mobile app",
       "link": "trueDepthMesh.html"
-    },
-    {
-      "title": "Lidar tests",
-      "type": ["model", "lidar"],
-      "image": "thumbnails/poster_turtle.jpg",
-      "description": "LiDAR scans, Tested different lidar scanner mobile apps",
-      "link": "lidarTests.html"
     },
     {
       "title": "Photogrammetry test",
