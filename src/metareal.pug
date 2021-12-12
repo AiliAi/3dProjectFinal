@@ -1,25 +1,80 @@
 extends layout.pug
 block append head
-    title=  'Metareal'
+    title=  'Metareal virtual tour'
 block append content
   .container
     .row 
-      .h1.mt-3.mb-0 Metareal virtual tour
+      .main-heading.mt-3.mb-0 Metareal virtual tour
     .row 
       .d-flex.flex-row-reverse
-        i(
-          class="bi bi-info-circle-fill" 
-          data-bs-toggle="tooltip" 
-          data-bs-placement="bottom" 
-          title="Metareal virtual tour")
+        a(href="#info")
+          i(
+            class="bi bi-info-circle-fill"
+            data-bs-toggle="tooltip" 
+            data-bs-placement="bottom" 
+            title="info"
+          )  
     .row
       iframe(
         id="metareal-tour"
-        width="853"
-        height="480"
-        frameborder="0"
-        allowfullscreen
-        allow="xr-spatial-tracking")
-    .row
-      a(href="https://www.metareal.com/" class="link-primary mt-3 mb-5" alt="web link to matterport page") metareal.com
-
+        style="max-width: 100%;" 
+        width="640" 
+        height="480" 
+        frameborder="0" 
+        allowfullscreen 
+      )
+    .d-flex.align-items-center.cont-up
+      .h1-doc#info Info
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Used
+      .flex-grow-1
+        ul 
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Matterport Pro2 camera
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc 9 360-degree images
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Metareal Stage web-editor
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Working Process
+      .flex-grow-1
+        ul
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc 360-degree images taken with a Matterport camera at the Metropolia Karamalmi campus
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc 360-degree images downloaded from Matterport cloud and uploaded to Metareal Stage
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Creating a room comprises the following steps: selection of reference panorama, alignment to world grid, leveling reference panorama, drawing floor outline, aligning other panoramas to the reference panorama
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Objects, doors and windows can be marked to achieve a more accurate floor plan, but this step was skipped
+          li.d-flex
+            i(class="bi bi-arrow-right")
+            .text-doc Connecting panoramas in the Tour editor 
+    .d-flex.align-items-center.cont-up
+      .flex-shrink-0.heading-cont
+        .h2-doc Where to use
+      .flex-grow-1
+        ul
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc To make an immersive 3D virtual tour
+          li.d-flex
+            i(class="bi bi-lightbulb")
+            .text-doc Any kind of virtual tour: gallery, shop, school, workplace
+    .d-flex.align-items-center.cont-up.mb-5
+      .flex-shrink-0.heading-cont
+        .h2-doc Webpages
+      .flex-grow-1
+        ul 
+          li
+            a(href="https://www.metareal.com/" class="link-primary mt-3 mb-5" alt="web link to cupix page") https://www.metareal.com/
+          

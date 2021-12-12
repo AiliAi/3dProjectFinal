@@ -1,13 +1,9 @@
-import '../modules/nav-loading.js';
-import '../styles/main.scss';
-import * as bootstrap from 'bootstrap';
+import "../modules/nav-loading.js";
+import "../styles/main.scss";
+import "../modules/tooltip.js";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-import { GUI } from "three/examples/jsm/libs/dat.gui.module.js";
-
-console.log(THREE);
-console.log(GLTFLoader);
 
 let scene;
 let camera;
@@ -18,8 +14,6 @@ const canvasSize = document.querySelector(".canvas-container");
 
 const init = () => {
   scene = new THREE.Scene();
-  console.log(scene);
-
   const axesHelper = new THREE.AxesHelper(2);
   scene.add(axesHelper);
 
@@ -49,17 +43,18 @@ const init = () => {
   renderer.setClearColor(0x000000, 0.0);
 
   const controls = new OrbitControls(camera, renderer.domElement);
-  //controls.target.y = 2;
+  controls.target.y = 0.1;
   controls.enableDamping = true;
+  controls.update();
 
   //Setup lights
   //First argument is color, second is intensity
   const ambientLight = new THREE.AmbientLight(0x404040, 2);
   scene.add(ambientLight);
 
-  const spotLight1 = new THREE.SpotLight(0xffffff, 5);
+  const spotLight1 = new THREE.SpotLight(0xffffff, 3);
   //Spot from which light is emitted
-  spotLight1.position.set(8, 10, 5);
+  spotLight1.position.set(11, 9, 5);
   const spotLightHelper1 = new THREE.SpotLightHelper(spotLight1);
   scene.add(spotLight1);
   scene.add(spotLightHelper1);
@@ -72,34 +67,11 @@ const init = () => {
 
   //Backight
   const spotLight3 = new THREE.SpotLight(0x1d27f0, 2);
-  spotLight3.position.set(-10, 18, -17);
+  spotLight3.position.set(12, 18, -17);
   const spotLightHelper3 = new THREE.SpotLightHelper(spotLight3);
   scene.add(spotLight3);
   scene.add(spotLightHelper3);
 
-  //Setup GUI
-  const gui = new GUI();
-
-  const light1 = gui.addFolder("BlueLight");
-  //In argument axis, min, max and interval
-  light1.add(spotLight1.position, "x", -30, 30, 1);
-  light1.add(spotLight1.position, "y", -30, 30, 1);
-  light1.add(spotLight1.position, "z", -30, 30, 1);
-
-  const light2 = gui.addFolder("OrangeLight");
-  light2.add(spotLight2.position, "x", -40, 40, 1);
-  light2.add(spotLight2.position, "y", -40, 40, 1);
-  light2.add(spotLight2.position, "z", -40, 40, 1);
-
-  const backlight = gui.addFolder("Backlight");
-  backlight.add(spotLight3.position, "x", -40, 40, 1);
-  backlight.add(spotLight3.position, "y", -40, 40, 1);
-  backlight.add(spotLight3.position, "z", -40, 40, 1);
-
-  const cam = gui.addFolder("Camera");
-  cam.add(camera.position, "x", -40, 40, 1);
-  cam.add(camera.position, "y", -40, 40, 1);
-  cam.add(camera.position, "z", -40, 40, 1);
   const cameraHelper = new THREE.CameraHelper(camera);
   scene.add(cameraHelper);
 
@@ -109,13 +81,9 @@ const init = () => {
     model = glb.scene.children[0];
     model.rotation.y = Math.PI * 10;
     model.scale.set(6, 6, 6);
-    model.position.set(0, -5, 13);
-    model.rotation.x = Math.PI / -3;
-    
-    const roomGUI = gui.addFolder("RoomPosition");
-    roomGUI.add(model.position, "x", -40, 40, 1);
-    roomGUI.add(model.position, "y", -40, 40, 1);
-    roomGUI.add(model.position, "z", -40, 40, 1);
+    model.position.set(0, 0, 13);
+    model.rotation.x = Math.PI / -2;
+
     scene.add(glb.scene);
     console.log("glb mikä olet", glb);
   });
