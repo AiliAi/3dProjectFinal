@@ -61,7 +61,7 @@
     cursor: help;
 }
 
-.bi.bi-info-circle-fill:hover, .bi.bi-lightbulb-fill:hover{
+.bi.bi-info-circle-fill:hover, .bi.bi-lightbulb-fill:hover, #up-button:hover{
     color: $blueHover;
 }
 
@@ -70,6 +70,18 @@
     font-size: 1em;
     font-style: normal;
 }
+
+#up-button  {
+    display: none;
+    position: fixed;
+    bottom: 2vh;
+    right: 4vh;
+    z-index: 99;
+    font-size: 8vh;
+    color: $blue;
+    cursor: pointer;
+}
+
 
 @include media-breakpoint-down(md) { 
     .cont-up {

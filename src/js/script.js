@@ -1,10 +1,7 @@
 import "../styles/main.scss";
 import "../modules/nav-loading.js";
 import "../modules/frontImage.js";
-import image1 from "../../static/placeholder.jpg";
-import image2 from "../../static/placeholder.jpg";
-import image3 from "../../static/placeholder.jpg";
-
+import '../modules/scrollUp.js';
 import * as bootstrap from "bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.scss";
 import { Color } from "three";

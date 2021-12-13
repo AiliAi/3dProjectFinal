@@ -4,8 +4,7 @@ import '../styles/main.scss';
 import '../modules/tooltip.js';
 import {createCard} from '../modules/card';
 import { gsap } from 'gsap'
-
-
+import '../modules/scrollUp.js';
 
 
 const cardsContainer = document.querySelector(".cards-container");

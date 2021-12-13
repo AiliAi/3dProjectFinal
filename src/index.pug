@@ -3,6 +3,10 @@ block append head
   title=  'Home'
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
 block append content
+  i(
+    class="bi bi-arrow-up-square-fill"
+    id="up-button"
+  )  
   .container-fluid.m-0.p-0(class="loading-bar")
     .row.m-0.p-0.g-0(id="container") 
       .col-md-8#heading-text.d-flex.flex-column.align-items-center.py-4.px-md-3
