@@ -1,13 +1,82 @@
 extends layout.pug
 block append head
-    title=  'three test'
+    title=  'Photogrammetry'
 block append content
-    .container-three
-        .three-text-content
-            h1 Three JS Test
-            p
-                | Stydying ThreeJS &amp; testing photogrammetry. 3D model was created from 50 images (iPhone SE) using Meshroom 
-                a(href='https://alicevision.org/') https://alicevision.org/
-                |  and cleaned in Blender.
-        .canvas-container
-            canvas.webgl
+    .container
+        .row 
+            .main-heading.mt-3.mb-0 Photogrammetry
+        .row 
+            .d-flex.flex-row-reverse
+                a(href="#info")
+                    i(
+                        class="bi bi-info-circle-fill"
+                        data-bs-toggle="tooltip" 
+                        data-bs-placement="bottom" 
+                        title="info"
+                    )   
+        .row.canvas-container.g-0
+            canvas(class="webgl")
+        .row 
+          .text-doc.d-inline-block.mt-2 There is a better version of this on 
+            a.text-wrap(href="https://sketchfab.com/3d-models/candle-c430c6d0120c4ad18f80a912b05fd84a", target="__blank") Sketchfab     
+        .d-flex.align-items-center.cont-up
+            .h1-doc#info Info
+        .d-flex.align-items-center.cont-up
+            .flex-shrink-0.heading-cont
+                .h2-doc Used
+            .flex-grow-1
+                ul 
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc 50 images taken with iPhone SE
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc Meshroom, an open-source 3D reconstruction software by AliceVision Association
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc Three.js
+        .d-flex.align-items-center.cont-up
+            .flex-shrink-0.heading-cont
+                .h2-doc Working Process
+            .flex-grow-1
+                ul
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc 50 images of an object were taken from different angles without moving the object
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc.d-inline-block Images were converted to .jpg format and uploaded to Meshroom for reconstruction. The process is described in detail in Meshroom's photogrammetry 
+                          a.text-wrap(href="https://alicevision.org/#photogrammetry", target="__blank") pipeline 
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc The resulting mesh was cleaned-up in Blender and exported in .glb format
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc 3D model is renderd using ThreeJS   
+                    li.d-flex
+                        i(class="bi bi-arrow-right")
+                        .text-doc.d-inline-block The process was repeated with a new set of 58 images. These images were taken with the same mobile phone, but in natural light and with a black background. The resuting model is on 
+                          a.text-wrap(href="https://sketchfab.com/3d-models/candle-c430c6d0120c4ad18f80a912b05fd84a", target="__blank") Sketchfab                    
+        .d-flex.align-items-center.cont-up
+            .flex-shrink-0.heading-cont
+                .h2-doc Where to use
+            .flex-grow-1
+                ul
+                    li.d-flex
+                        i(class="bi bi-lightbulb")
+                        .text-doc Studying and experimenting with photogrammetry
+                    li.d-flex
+                        i(class="bi bi-lightbulb")
+                        .text-doc Cultural and artistic projects
+                    li.d-flex
+                        i(class="bi bi-lightbulb")
+                        .text-doc Can get professional results with DSLR camera and more advanced 3D editing skills
+        .d-flex.align-items-center.cont-up.mb-5
+            .flex-shrink-0.heading-cont
+                .h2-doc Webpages
+            .flex-grow-1
+                ul 
+                    li
+                        a(href="https://alicevision.org/" class="link-primary mt-3 mb-5" alt="web link to qlone page", target="__blank") alicevision.org
+                    li
+                        a(href="https://threejs.org" class="link-primary mt-3 mb-5" alt="web link to threejs page", target="__blank") three.js

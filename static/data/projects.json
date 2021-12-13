@@ -101,30 +101,30 @@
     },
     {
       "title": "Point-cloud PLY",
-      "type": ["model", "lidar"],
+      "type": ["model", "depth"],
       "image": "thumbnails/poster_face.jpg",
       "description": "TrueDepth 3D camera, Created with Standard Cyborg Capture mobile app",
       "link": "trueDepthPLY.html"
     },
     {
       "title": "Point-cloud to USDZ",
-      "type": ["model", "lidar"],
+      "type": ["model", "depth"],
       "image": "thumbnails/poster_faceUSDZ.jpg",
       "description": "TrueDepth 3D camera, Created with Standard Cyborg Capture mobile app",
       "link": "trueDepthUSDZ.html"
     },
     {
       "title": "Point-cloud to mesh",
-      "type": ["model", "lidar"],
+      "type": ["model", "depth"],
       "image": "thumbnails/poster_meshlab.jpg",
       "description": "TrueDepth 3D camera, Created with Standard Cyborg Capture mobile app",
       "link": "trueDepthMesh.html"
     },
     {
-      "title": "Photogrammetry test",
+      "title": "Photogrammetry",
       "type": ["model", "photogrammetry"],
       "image": "thumbnails/photogrammetry.PNG",
-      "description": "Photogrammetry, Tested Three.js library and Meshroom picture stitcher",
+      "description": "Photogrammetry, Tested Three.js library and Meshroom 3D reconstruction software",
       "link": "threeTest.html"
     },
     {
