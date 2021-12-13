@@ -91,7 +91,7 @@
     width: 100%;
 }
 
-@include media-breakpoint-down(xs) { 
+@include media-breakpoint-down(sm) { 
     #doc-info {
         margin-left: 0 !important;
         padding-left: 0 !important;
