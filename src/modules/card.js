@@ -14,7 +14,7 @@ const createCard = async (type) => {
       cardCol.className = "col";
 
       const card = document.createElement("div");
-      card.className = "card m-3 shadow border-0";
+      card.className = "card my-3 mx-md-3 shadow border-0";
 
       const cardImage = document.createElement("div");
       cardImage.className = "card-img-top";
