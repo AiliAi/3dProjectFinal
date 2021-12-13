@@ -4,7 +4,7 @@ block append head
 block append content
     .container
         .row 
-            .main-heading.mt-3.mb-0 Three.js
+            .main-heading.mt-3.mb-0 Photogrammetry
         .row 
             .d-flex.flex-row-reverse
                 a(href="#info")
@@ -16,6 +16,9 @@ block append content
                     )   
         .row.canvas-container.g-0
             canvas(class="webgl")
+        .row 
+          .text-doc.d-inline-block.mt-2 There is a better version of this on 
+            a.text-wrap(href="https://sketchfab.com/3d-models/candle-c430c6d0120c4ad18f80a912b05fd84a", target="__blank") Sketchfab     
         .d-flex.align-items-center.cont-up
             .h1-doc#info Info
         .d-flex.align-items-center.cont-up
@@ -42,18 +45,18 @@ block append content
                         .text-doc 50 images of an object were taken from different angles without moving the object
                     li.d-flex
                         i(class="bi bi-arrow-right")
-                        .text-doc.d-inline-block Images were converted to .jpg format and uploaded to Meshroom for reconstruction. The exact process is described in Meshroom's photogrammetry 
+                        .text-doc.d-inline-block Images were converted to .jpg format and uploaded to Meshroom for reconstruction. The process is described in detail in Meshroom's photogrammetry 
                           a.text-wrap(href="https://alicevision.org/#photogrammetry", target="__blank") pipeline 
                     li.d-flex
                         i(class="bi bi-arrow-right")
-                        .text-doc The resulting mesh was cleaned-up in Blender
+                        .text-doc The resulting mesh was cleaned-up in Blender and exported in .glb format
                     li.d-flex
                         i(class="bi bi-arrow-right")
-                        .text-doc 3D model is renderd using ThreeJS 
+                        .text-doc 3D model is renderd using ThreeJS   
                     li.d-flex
                         i(class="bi bi-arrow-right")
-                        .text-doc.d-inline-block There is a better version of this on 
-                          a.text-wrap(href="https://sketchfab.com/3d-models/candle-c430c6d0120c4ad18f80a912b05fd84a", target="__blank") Sketchfab       
+                        .text-doc.d-inline-block The process was repeated with a new set of 58 images. These images were taken with the same mobile phone, but in natural light and with a black background. The resuting model is on 
+                          a.text-wrap(href="https://sketchfab.com/3d-models/candle-c430c6d0120c4ad18f80a912b05fd84a", target="__blank") Sketchfab                    
         .d-flex.align-items-center.cont-up
             .flex-shrink-0.heading-cont
                 .h2-doc Where to use
@@ -74,6 +77,6 @@ block append content
             .flex-grow-1
                 ul 
                     li
-                        a(href="https://alicevision.org/" class="link-primary mt-3 mb-5" alt="web link to qlone page") https://alicevision.org/
+                        a(href="https://alicevision.org/" class="link-primary mt-3 mb-5" alt="web link to qlone page", target="__blank") alicevision.org
                     li
-                        a(href="https://threejs.org" class="link-primary mt-3 mb-5" alt="web link to threejs page") three.js
+                        a(href="https://threejs.org" class="link-primary mt-3 mb-5" alt="web link to threejs page", target="__blank") three.js
