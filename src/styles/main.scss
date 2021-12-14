@@ -285,3 +285,9 @@ ul {
   height: 480px;
   background-color: #bbbbbb;
 }
+
+@include media-breakpoint-down(sm) { 
+  h1 {
+    font-size: 6vh;
+  }
+}
